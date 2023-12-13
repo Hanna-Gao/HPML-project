@@ -1,0 +1,88 @@
+{
+    "os": "Linux-4.19.0-25-cloud-amd64-x86_64-with-debian-10.13",
+    "python": "3.7.12",
+    "heartbeatAt": "2023-12-12T22:34:56.899020",
+    "startedAt": "2023-12-12T22:34:56.523877",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "trainHPtuning.py",
+    "codePathLocal": "trainHPtuning.py",
+    "codePath": "src/trainHPtuning.py",
+    "git": {
+        "remote": "https://github.com/Hanna-Gao/HPML-project",
+        "commit": "d2e99ca5673e058e376b2c7dd6d6e6482f1a7a87"
+    },
+    "email": null,
+    "root": "/home/qg2205/HPML-project",
+    "host": "instance-5",
+    "username": "qg2205",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2000.17,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.17,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 48.97825241088867,
+            "used": 32.36437225341797
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 29.44634246826172
+    }
+}

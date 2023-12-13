@@ -1,0 +1,43 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0.1
+learning_rate_decay_every:
+  desc: null
+  value: 15
+learning_rate_decay_rate:
+  desc: null
+  value: 0.85
+learning_rate_decay_start:
+  desc: null
+  value: 100
+optimizer:
+  desc: null
+  value: sgd
+_wandb:
+  desc: null
+  value:
+    python_version: 3.7.12
+    cli_version: 0.16.1
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1702420496.532425
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 23
+      - 37
+      4: 3.7.12
+      5: 0.16.1
+      8:
+      - 5
+      13: linux-x86_64

@@ -1,0 +1,12 @@
+wandb_version: 1
+
+learning_rate:
+  value: 0.05
+learning_rate_decay_every:
+  value: 5
+learning_rate_decay_rate:
+  value: 0.85
+learning_rate_decay_start:
+  value: 150
+optimizer:
+  value: sgd
