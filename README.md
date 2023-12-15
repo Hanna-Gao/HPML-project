@@ -1,13 +1,21 @@
-# pytorch-facial-expression-recognition
+# 6998 HPML Final Project
 
-Lightweight facial emotion recognition.
+## Description
 
-* Pytorch implementation for [Mini Xception](https://arxiv.org/pdf/1710.07557.pdf) inspired by [Keras implementation](https://github.com/oarriaga/face_classification).
-* Model size is about `250KB`
+The overarching goal of this project is to enhance an existing Lightweight facial emotion recognition system on GitHub (https://github.com/yoshidan/pytorch-facial-expression-recognition) by optimizing its data processing, model performance, and deployment efficiency. We will retrain the model with the existing model and we aim to achieve higher recognition accuracy and better runtime performance by several optimization techniques. 
 
-## Trained Model
+## Outline of the code respository
 
-Trained by FER2013 dataset.
+./dataset: dataset in csv format used for training\
+./src: all source code for training and optimizing\
+---PlotNumWorkers.py\
+---model.py: define network structure\
+---trainNumWorkers.py\
+---trainHPtuning.py\
+---trainOptimalParam.py\
+./outputs: raw output saved in numpy array or text files\
+./Plots: images of result plots\
+./trained: save trained model checkpoints\
 
 * Private Data : 66%
 * Public Data : 64%
@@ -19,16 +27,50 @@ Emotion | Probability | Guided Backprop | Grad-Cam | Guided Grad-Cam
 
 ## Retrain
 
-1. see [here](./dataset/README.md) to prepare dataset.
+1. Prepare the dataset: please see [here](./dataset/README.md)
 
-2. execute train.py
+2. Hardware Requirements:
+   * CPU: 8 vCPU, 4 cores, 30 GB memory
+   * GPU: 1 NVIDIA T4 GPU
+     
+3. Install Software:
+   * PyTorch
+
+```
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url 	https://download.pytorch.org/whl/cu116
+```
+  * Wandb
+```
+pip install wandb
+```
+
+4. Retrain
+   * Data Loading Optimization: number of workers in DataLoader as command line parameter
+
 ```
 cd src
-python train.py
-python check.py  #check.py supports cpu only
+python trainNumWorkers.py -n 2
 ```
+   * Hyperparameter Tuning
+
+```
+cd src
+python trainHPtuning.py
+```
+   * Train model with the optimal set of Hyperparmeters
+
+```
+cd src
+python trainOptimalParam.py
+```
+
+## Results
+1. Dataloading optimization: 
+   
+2. Hyperparameter Tuning:
+   Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
+
 
 ## Reference
 
-* [Grad-CAM](https://github.com/kazuto1011/grad-cam-pytorch)
-* [Data Augmentation / Optimizer](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)
+* Base Model: https://github.com/yoshidan/pytorch-facial-expression-recognition
