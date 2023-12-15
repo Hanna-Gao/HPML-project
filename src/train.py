@@ -107,6 +107,7 @@ def main():
     data_loading_time = []
     training_time = []
     total_epoch_time = []
+    total_validation_time = []
 
 
     classes = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
@@ -187,31 +188,36 @@ def main():
             total += y_train.size(0)
             correct += predicted.eq(y_train.data).sum()
 
-        epoch_end = time.perf_counter()
-        epoch_time = epoch_end - epoch_start
+        
 
         accuracy = 100. * float(correct) / total
         print('----------------------------------------------------------------------')
         print('Epoch [%d/%d] Training Loss: %.4f, Accuracy: %.4f' % (
             epoch + 1, epochs, total_train_loss / (i + 1), accuracy))
-        print('Total DataLoading Time: {} | Total Training Time: {} | Total Time of Epoch: {}'.format(total_dataload_time, total_train_time, epoch_time))
 
         data_loading_time.append(total_dataload_time)
         # print('Epoch [%d/%d]' % (epoch + 1, epochs))
         # print('Total DataLoading Time: ', total_dataload_time)
         training_time.append(total_train_time)
-        total_epoch_time.append(epoch_time)
+        
 
         network.eval()
+        
+        validation_time = 0
         with torch.no_grad():
             for name in ['private', 'public']:
                 total = 0
                 correct = 0
                 total_validation_loss = 0
+                
                 for j, (x_val, y_val) in enumerate(validation_loader[name]):
                     x_val = x_val.to(device)
                     y_val = y_val.to(device)
+                    inference_start = time.perf_counter()
                     y_val_predicted = network(x_val)
+                    inference_end = time.perf_counter()
+                    inference_time = inference_end - inference_start
+                    validation_time += inference_time
                     val_loss = criterion(y_val_predicted, y_val)
                     _, predicted = torch.max(y_val_predicted.data, 1)
                     total_validation_loss += val_loss.data
@@ -228,28 +234,30 @@ def main():
 
                 print('Epoch [%d/%d] %s validation Loss: %.4f, Accuracy: %.4f' % (
                     epoch + 1, epochs, name, total_validation_loss / (j + 1), accuracy))
+        
+        total_validation_time.append(validation_time)
+        epoch_end = time.perf_counter()
+        epoch_time = epoch_end - epoch_start
+        total_epoch_time.append(epoch_time)
 
     
     data_loading_time = np.array(data_loading_time)
     training_time = np.array(training_time)
     total_epoch_time = np.array(total_epoch_time)
+    total_validation_time = np.array(total_validation_time)
+    print('Total DataLoading Time: {} | Total Training Time: {} | Total Validation Time: {} | Total Time of Epoch: {}'.format(total_dataload_time, validation_time, total_train_time, epoch_time))
+
 
     print()
     print('Avergae Data Loading Time per Epoch: ', np.mean(data_loading_time))
     print('Avergae Training Time per Epoch: ', np.mean(training_time))
+    print('Avergae Validation Time per Epoch: ', np.mean(total_validation_time))
     print('Avergae Time per Epoch: ', np.mean(total_epoch_time))
 
-    np.save('/home/qg2205/HPML-project/data_loading_time' + str(args.n) + '.npy', data_loading_time)
-    np.save('/home/qg2205/HPML-project/training_time.npy', training_time)
-    np.save('/home/qg2205/HPML-project/total_epoch_time.npy', total_epoch_time)
+    # np.save('/home/qg2205/HPML-project/data_loading_time' + str(args.n) + '.npy', data_loading_time)
+    # np.save('/home/qg2205/HPML-project/training_time.npy', training_time)
+    # np.save('/home/qg2205/HPML-project/total_epoch_time.npy', total_epoch_time)
 
-
-    # print(prof.key_averages(group_by_input_shape=True).table(sort_by="cpu_time_total", row_limit=10))
-    # print(prof.key_averages().table(sort_by="cuda_time_total", row_limit=10))
-    # print(prof.key_averages().table(sort_by="cpu_memory_usage", row_limit=10))
-    # print(prof.key_averages().table(sort_by="cuda_memory_usage", row_limit=10))
-
-    # prof.export_chrome_trace("/home/qg2205/HPML-project/src")
     
 
 if __name__ == "__main__":
