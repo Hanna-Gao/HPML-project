@@ -49,8 +49,9 @@ python train.py -n 8
    * The optimal configuration is:
    <img src="./plots/HPconfig.png">
 
-   * After retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. 
-   <img src="./plots/HPaccuracy.png">
+   * After retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. \
+   <img src="./plots/HPaccuracy.png"> \
+\
    Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
 
 4. Quantization:
