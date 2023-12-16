@@ -63,6 +63,9 @@ class DataSetFactory:
         self.training = DataSet(transform=train_transform, images=images, emotions=emotions)
         self.private = DataSet(transform=val_transform, images=private_images, emotions=private_emotions)
         self.public = DataSet(transform=val_transform, images=public_images, emotions=public_emotions)
+    
+    def get_training_data(self):
+        return self.training.images, self.training.emotions
 
 
 class DataSet(torch.utils.data.Dataset):
