@@ -7,6 +7,8 @@ import csv
 from PIL import Image
 from torchvision.transforms import ToTensor
 from torch.utils.data import DataLoader
+from torch.utils.data import WeightedRandomSampler
+from torchvision.transforms import RandomApply
 
 if not torch.cuda.is_available():
     from torchsummary import summary
@@ -46,19 +48,41 @@ class DataSetFactory:
 
         print('training size %d : private val size %d : public val size %d' % (
             len(images), len(private_images), len(public_images)))
+
+
+        # Apply random transformations with a certain probability
+        random_transform = RandomApply([
+            transforms.ColorJitter(brightness=0.5, contrast=0.5),  # Adjust brightness & contrast
+            transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),  # Blur to add robustness
+        ], p=0.5)
+
         train_transform = transforms.Compose([
-            transforms.RandomCrop(shape[0]),
-            transforms.RandomHorizontalFlip(),
-            ToTensor(),
+            transforms.RandomCrop(shape[0]),  # Random cropping
+            transforms.RandomHorizontalFlip(),  # Horizontal flip
+            random_transform,  # Apply the random transformations defined above
+            ToTensor(),  # Convert PIL Image to tensor
         ])
+
         val_transform = transforms.Compose([
-            transforms.CenterCrop(shape[0]),
-            ToTensor(),
+            transforms.CenterCrop(shape[0]),  # Center cropping for validation
+            ToTensor(),  # Convert PIL Image to tensor
         ])
+
 
         self.training = DataSet(transform=train_transform, images=images, emotions=emotions)
         self.private = DataSet(transform=val_transform, images=private_images, emotions=private_emotions)
         self.public = DataSet(transform=val_transform, images=public_images, emotions=public_emotions)
+        
+    def get_training_data(self):
+        return self.training.images, self.training.emotions
+    
+    def get_class_distribution(self):
+        # Count the number of occurrences of each emotion in the training set
+        emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
+        emotion_counts = {emotion: 0 for emotion in range(len(emotion_labels))}
+        for emotion in self.training.emotions:
+            emotion_counts[emotion] += 1
+        return emotion_counts
 
 
 class DataSet(torch.utils.data.Dataset):
@@ -98,7 +122,26 @@ def main():
     criterion = nn.CrossEntropyLoss()
     factory = DataSetFactory()
 
-    training_loader = DataLoader(factory.training, batch_size=batch_size, shuffle=True, num_workers=1)
+
+    # Assuming emotion_labels is a list of your class names in the right order
+    emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
+
+    # Initialize the DataSetFactory and get the class distribution
+    factory = DataSetFactory()
+    emotion_counts = factory.get_class_distribution()
+
+    # Calculate the weight for each class based on the distribution
+    weights = 1. / np.array([emotion_counts[emotion] for emotion in range(len(emotion_labels))])
+
+    # Create a list of weights for each sample in the dataset
+    sample_weights = [weights[emotion] for emotion in factory.training.emotions]
+
+    # Create the sampler
+    sampler = WeightedRandomSampler(sample_weights, num_samples=len(sample_weights), replacement=True)
+
+    # Now, use the sampler in your DataLoader
+
+    training_loader = DataLoader(factory.training, batch_size=batch_size, shuffle=True, num_workers=1, sampler=sampler)
     validation_loader = {
         'private': DataLoader(factory.private, batch_size=batch_size, shuffle=True, num_workers=1),
         'public': DataLoader(factory.public, batch_size=batch_size, shuffle=True, num_workers=1)
