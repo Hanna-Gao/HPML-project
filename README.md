@@ -49,6 +49,7 @@ python train.py -n 8
    Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
 
 4. Quantization:
+   <img src="./plots/quanAccuracy.png">
    
 ## Reference
 
