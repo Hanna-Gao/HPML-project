@@ -12,7 +12,7 @@ The overarching goal of this project is to enhance an existing Lightweight facia
 ---model.py: define network structure\
 ---train.py: final optimized model\
 ---trainHPtuning.py: code used for hyperparameter tuning\
-./outputs: raw output saved in numpy array\
+./outputs: raw output saved in numpy array or text file\
 ./plots: images of result plots\
 ./trained: save trained model checkpoints\
 
@@ -49,8 +49,9 @@ python train.py -n 8
    * The optimal configuration is:
    <img src="./plots/HPconfig.png">
 
-   * After retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. 
-   <img src="./plots/HPaccuracy.png">
+   * After retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. \
+   <img src="./plots/HPaccuracy.png"> \
+\
    Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
 
 4. Quantization:
