@@ -42,19 +42,19 @@ python train.py -n 8
 ## Results
 1. Data Augmentation: 
 2. Dataloading optimization:
-   The dataloading time decreases consistently as the number of workers increases. We will use 8 number of workers for further optimizations, which is the maximum number of workers available as we are using 8 CPU.\
+   * The dataloading time decreases consistently as the number of workers increases. We will use 8 number of workers for further optimizations, which is the maximum number of workers available as we are using 8 CPU.\
    <img src="./plots/NumWorkersvsTime.png">
    
 3. Hyperparameter Tuning:
-   The optimal configuration is:
+   * The optimal configuration is:
    <img src="./plots/HPconfig.png">
 
-   AFter retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. 
+   * After retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. 
    <img src="./plots/HPaccuracy.png">
    Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
 
 4. Quantization:
-   From the table, quantization is not an effective optimization technique for this model. 
+   * From the table, quantization is not an effective optimization technique for this model. 
    <img src="./plots/quanAccuracy.png">
    
 ## Reference
