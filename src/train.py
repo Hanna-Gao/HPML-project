@@ -10,7 +10,6 @@ from torch.utils.data import DataLoader
 import time
 import os
 import argparse
-# from torch.profiler import profile, ProfilerActivity
 
 if not torch.cuda.is_available():
     from torchsummary import summary
@@ -19,9 +18,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 shape = (44, 44)
 
-
+# Process the dataset
 class DataSetFactory:
-
     def __init__(self):
         images = []
         emotions = []
@@ -30,7 +28,7 @@ class DataSetFactory:
         public_images = []
         public_emotions = []
 
-        with open('../dataset/fer2013.csv', 'r') as csvin:
+        with open('../dataset/fer2013_balanced.csv', 'r') as csvin:
             data = csv.reader(csvin)
             next(data)
             for row in data:
@@ -63,11 +61,8 @@ class DataSetFactory:
         self.training = DataSet(transform=train_transform, images=images, emotions=emotions)
         self.private = DataSet(transform=val_transform, images=private_images, emotions=private_emotions)
         self.public = DataSet(transform=val_transform, images=public_images, emotions=public_emotions)
-    
-    def get_training_data(self):
-        return self.training.images, self.training.emotions
 
-
+# Define PyTorch Dataset
 class DataSet(torch.utils.data.Dataset):
 
     def __init__(self, transform=None, images=None, emotions=None):
@@ -87,12 +82,9 @@ class DataSet(torch.utils.data.Dataset):
 
 
 def main():
-
+    # Define Command line argument parser
     parser = argparse.ArgumentParser(description='Facial Expression Recognition')
-    # parser.add_argument('--cuda', action='store_true', help='Set to use Cuda')
-    # parser.add_argument('--path', default='./data', type=str, help='Data Path')
     parser.add_argument('--n', default=1, type=int, help='number of dataloader workers')
-    # parser.add_argument('--optimizer', '-o', default='sgd', type=str, help='the optimizer (as string, eg: ‘sgd’)')
     args = parser.parse_args()
 
     for arg, value in vars(args).items():
@@ -100,13 +92,14 @@ def main():
 
     # variables  -------------
     batch_size = 128
-    lr = 0.01
+    lr = 0.005
     epochs = 300
-    learning_rate_decay_start = 80
-    learning_rate_decay_every = 5
-    learning_rate_decay_rate = 0.9
+    learning_rate_decay_start = 100
+    learning_rate_decay_every = 15
+    learning_rate_decay_rate = 0.85
     # ------------------------
 
+    # Initiazlie variable for time profiling 
     data_loading_time = []
     training_time = []
     total_epoch_time = []
@@ -122,6 +115,7 @@ def main():
     criterion = nn.CrossEntropyLoss()
     factory = DataSetFactory()
 
+    # Initialize dataloader for training and validation set
     training_loader = DataLoader(factory.training, batch_size=batch_size, shuffle=True, num_workers=args.n)
     validation_loader = {
         'private': DataLoader(factory.private, batch_size=batch_size, shuffle=True, num_workers=args.n),
@@ -133,17 +127,17 @@ def main():
         'public': 10000,
     }
 
+    # Start Iterative Training
     for epoch in range(epochs):
         # Profiliing time for each epoch
         epoch_start = time.perf_counter()
-
         network.train()
         total = 0
         correct = 0
         total_train_loss = 0
-        if epoch > learning_rate_decay_start and learning_rate_decay_start >= 0:
 
-            #
+        # Learning Rate decay
+        if epoch > learning_rate_decay_start and learning_rate_decay_start >= 0:
             frac = (epoch - learning_rate_decay_start) // learning_rate_decay_every
             decay_factor = learning_rate_decay_rate ** frac
             current_lr = lr * decay_factor
@@ -152,21 +146,12 @@ def main():
         else:
             current_lr = lr
 
-        print('learning_rate: %s' % str(current_lr))
-
-        # with profile(activities=[
-        #     ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True, profile_memory=True) as prof:
-
         it = iter(training_loader)
         total_batch = len(training_loader)
-        batch_idx = 0
         total_train_time = 0
         total_dataload_time = 0
 
         for i in range(total_batch):
-        # for i, (x_train, y_train) in enumerate(training_loader):
-            
-
             # Profiling data loading time
             start = time.perf_counter()
             x_train, y_train = next(it)
@@ -191,21 +176,26 @@ def main():
             total += y_train.size(0)
             correct += predicted.eq(y_train.data).sum()
 
-        
-
         accuracy = 100. * float(correct) / total
         print('----------------------------------------------------------------------')
         print('Epoch [%d/%d] Training Loss: %.4f, Accuracy: %.4f' % (
             epoch + 1, epochs, total_train_loss / (i + 1), accuracy))
 
         data_loading_time.append(total_dataload_time)
-        # print('Epoch [%d/%d]' % (epoch + 1, epochs))
-        # print('Total DataLoading Time: ', total_dataload_time)
         training_time.append(total_train_time)
-        
 
+        # Switch to model Evaluation mode
         network.eval()
-        
+
+        # Apply Dynamic Post Training QUantization 
+        # quantized_model = torch.quantization.quantize_dynamic(
+        #     network, 
+        #     {nn.Linear, nn.Conv2d}, 
+        #     dtype=torch.qint8
+        #     )
+        quantized_model = network
+
+        # model inference with validation sets
         validation_time = 0
         with torch.no_grad():
             for name in ['private', 'public']:
@@ -216,8 +206,9 @@ def main():
                 for j, (x_val, y_val) in enumerate(validation_loader[name]):
                     x_val = x_val.to(device)
                     y_val = y_val.to(device)
+                    # Profiling validation time
                     inference_start = time.perf_counter()
-                    y_val_predicted = network(x_val)
+                    y_val_predicted = quantized_model(x_val)
                     inference_end = time.perf_counter()
                     inference_time = inference_end - inference_start
                     validation_time += inference_time
@@ -228,10 +219,11 @@ def main():
                     correct += predicted.eq(y_val.data).sum()
 
                 accuracy = 100. * float(correct) / total
+                # Save model
                 if total_validation_loss <= min_validation_loss[name]:
                     if epoch >= 10:
                         print('saving new model')
-                        state = {'net': network.state_dict()}
+                        state = {'net': quantized_model.state_dict()}
                         torch.save(state, '../trained/%s_model_%d_%d.t7' % (name, epoch + 1, accuracy))
                     min_validation_loss[name] = total_validation_loss
 
@@ -248,8 +240,6 @@ def main():
     training_time = np.array(training_time)
     total_epoch_time = np.array(total_epoch_time)
     total_validation_time = np.array(total_validation_time)
-    print('Total DataLoading Time: {} | Total Training Time: {} | Total Validation Time: {} | Total Time of Epoch: {}'.format(total_dataload_time, validation_time, total_train_time, epoch_time))
-
 
     print()
     print('Avergae Data Loading Time per Epoch: ', np.mean(data_loading_time))
@@ -260,7 +250,6 @@ def main():
     # np.save('/home/qg2205/HPML-project/data_loading_time' + str(args.n) + '.npy', data_loading_time)
     # np.save('/home/qg2205/HPML-project/training_time.npy', training_time)
     # np.save('/home/qg2205/HPML-project/total_epoch_time.npy', total_epoch_time)
-
     
 
 if __name__ == "__main__":
