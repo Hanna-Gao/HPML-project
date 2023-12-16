@@ -16,7 +16,7 @@ The overarching goal of this project is to enhance an existing Lightweight facia
 ./plots: images of result plots\
 ./trained: save trained model checkpoints\
 
-## Retrain
+## Execute
 
 1. Prepare the dataset: please see [here](./dataset/README.md)
 
@@ -32,7 +32,7 @@ pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --e
 pip install wandb
 ```
 
-4. Retrain
+4. Retrain the model
    * Command line parameter: number of workers in DataLoader as command line parameter (default: 1)
 ```
 cd src
