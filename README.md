@@ -13,7 +13,7 @@ The overarching goal of this project is to enhance an existing Lightweight facia
 ---train.py: final optimized model\
 ---trainHPtuning.py: code used for hyperparameter tuning\
 ---eda_project.ipynb: notebook used to do EDA and generate balanced dataset\
----train_
+---data_augmentation_train.py: code used data augmentation method\
 ./outputs: raw output saved in numpy array or text file\
 ./plots: images of result plots\
 ./trained: save trained model checkpoints\
@@ -42,7 +42,8 @@ python train.py -n 8
 ```
 
 ## Results
-1. Data Augmentation: 
+1. Data Augmentation:
+   * The balanced dataset caused overfitting, and the random transformations to the training data significantly increase the training time, thus not applied further.\
 2. Dataloading optimization:
    * The dataloading time decreases consistently as the number of workers increases. We will use 8 number of workers for further optimizations, which is the maximum number of workers available as we are using 8 CPU.\
    <img src="./plots/NumWorkersvsTime.png">
