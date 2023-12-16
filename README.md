@@ -12,7 +12,7 @@ The overarching goal of this project is to enhance an existing Lightweight facia
 ---model.py: define network structure\
 ---train.py: final optimized model\
 ---trainHPtuning.py: code used for hyperparameter tuning\
-./outputs: raw output saved in numpy array or text files\
+./outputs: raw output saved in numpy array\
 ./plots: images of result plots\
 ./trained: save trained model checkpoints\
 
@@ -47,7 +47,7 @@ python train.py -n 8
    
 3. Hyperparameter Tuning:
    The optimal configuration is:
-   <img src="./plots/NumWorkersvsTime.png">
+   <img src="./plots/HPconfig.png">
 
    AFter retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. 
    <img src="./plots/HPaccuracy.png">
