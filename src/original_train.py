@@ -123,15 +123,12 @@ def main():
     factory = DataSetFactory()
 
 
-    # Assuming emotion_labels is a list of your class names in the right order
-    emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
-
     # Initialize the DataSetFactory and get the class distribution
     factory = DataSetFactory()
     emotion_counts = factory.get_class_distribution()
 
     # Calculate the weight for each class based on the distribution
-    weights = 1. / np.array([emotion_counts[emotion] for emotion in range(len(emotion_labels))])
+    weights = 1. / np.array([emotion_counts[emotion] for emotion in range(len(classes))])
 
     # Create a list of weights for each sample in the dataset
     sample_weights = [weights[emotion] for emotion in factory.training.emotions]
