@@ -188,12 +188,12 @@ def main():
         network.eval()
 
         # Apply Dynamic Post Training QUantization 
-        # quantized_model = torch.quantization.quantize_dynamic(
-        #     network, 
-        #     {nn.Linear, nn.Conv2d}, 
-        #     dtype=torch.qint8
-        #     )
-        quantized_model = network
+        quantized_model = torch.quantization.quantize_dynamic(
+            network, 
+            {nn.Linear, nn.Conv2d}, 
+            dtype=torch.qint8
+            )
+        # quantized_model = network
 
         # model inference with validation sets
         validation_time = 0
