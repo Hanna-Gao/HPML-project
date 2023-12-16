@@ -1,0 +1,1229 @@
+(base) qg2205@instance-5:~/HPML-project/src$ python train.py --n 8
+n : 8
+training size 27785 : private val size 3497 : public val size 3491
+----------------------------------------------------------------------
+Epoch [1/300] Training Loss: 1.8683, Accuracy: 23.9662
+Epoch [1/300] private validation Loss: 1.7464, Accuracy: 31.2840
+Epoch [1/300] public validation Loss: 1.7411, Accuracy: 32.1398
+----------------------------------------------------------------------
+Epoch [2/300] Training Loss: 1.7083, Accuracy: 32.7083
+Epoch [2/300] private validation Loss: 1.5967, Accuracy: 38.6045
+Epoch [2/300] public validation Loss: 1.6528, Accuracy: 37.4391
+----------------------------------------------------------------------
+Epoch [3/300] Training Loss: 1.5697, Accuracy: 39.3054
+Epoch [3/300] private validation Loss: 1.5259, Accuracy: 39.5196
+Epoch [3/300] public validation Loss: 1.6003, Accuracy: 40.1031
+----------------------------------------------------------------------
+Epoch [4/300] Training Loss: 1.4602, Accuracy: 43.7826
+Epoch [4/300] private validation Loss: 1.4998, Accuracy: 42.6651
+Epoch [4/300] public validation Loss: 1.5791, Accuracy: 40.0172
+----------------------------------------------------------------------
+Epoch [5/300] Training Loss: 1.3960, Accuracy: 46.5971
+Epoch [5/300] private validation Loss: 1.4036, Accuracy: 46.4112
+Epoch [5/300] public validation Loss: 1.4779, Accuracy: 45.7176
+----------------------------------------------------------------------
+Epoch [6/300] Training Loss: 1.3361, Accuracy: 48.9833
+Epoch [6/300] private validation Loss: 1.3703, Accuracy: 45.0672
+Epoch [6/300] public validation Loss: 1.4421, Accuracy: 45.1733
+----------------------------------------------------------------------
+Epoch [7/300] Training Loss: 1.3005, Accuracy: 50.6028
+Epoch [7/300] private validation Loss: 1.3329, Accuracy: 48.4701
+Epoch [7/300] public validation Loss: 1.4071, Accuracy: 47.9805
+----------------------------------------------------------------------
+Epoch [8/300] Training Loss: 1.2621, Accuracy: 51.9849
+Epoch [8/300] private validation Loss: 1.3239, Accuracy: 48.1556
+Epoch [8/300] public validation Loss: 1.4008, Accuracy: 46.5769
+----------------------------------------------------------------------
+Epoch [9/300] Training Loss: 1.2328, Accuracy: 53.3057
+Epoch [9/300] private validation Loss: 1.3090, Accuracy: 49.6997
+Epoch [9/300] public validation Loss: 1.3621, Accuracy: 48.0092
+----------------------------------------------------------------------
+Epoch [10/300] Training Loss: 1.2122, Accuracy: 53.9788
+Epoch [10/300] private validation Loss: 1.2121, Accuracy: 54.1035
+Epoch [10/300] public validation Loss: 1.3344, Accuracy: 50.7591
+----------------------------------------------------------------------
+Epoch [11/300] Training Loss: 1.1881, Accuracy: 55.1269
+Epoch [11/300] private validation Loss: 1.2974, Accuracy: 51.1009
+Epoch [11/300] public validation Loss: 1.4443, Accuracy: 48.0951
+----------------------------------------------------------------------
+Epoch [12/300] Training Loss: 1.1692, Accuracy: 55.7963
+Epoch [12/300] private validation Loss: 1.2671, Accuracy: 52.1590
+Epoch [12/300] public validation Loss: 1.3382, Accuracy: 50.0430
+----------------------------------------------------------------------
+Epoch [13/300] Training Loss: 1.1561, Accuracy: 56.3757
+saving new model
+Epoch [13/300] private validation Loss: 1.2038, Accuracy: 54.7898
+saving new model
+Epoch [13/300] public validation Loss: 1.3051, Accuracy: 51.5612
+----------------------------------------------------------------------
+Epoch [14/300] Training Loss: 1.1311, Accuracy: 57.1927
+Epoch [14/300] private validation Loss: 1.2794, Accuracy: 53.3028
+Epoch [14/300] public validation Loss: 1.3629, Accuracy: 50.5872
+----------------------------------------------------------------------
+Epoch [15/300] Training Loss: 1.1268, Accuracy: 57.3367
+Epoch [15/300] private validation Loss: 1.2098, Accuracy: 52.7309
+saving new model
+Epoch [15/300] public validation Loss: 1.2866, Accuracy: 52.0195
+----------------------------------------------------------------------
+Epoch [16/300] Training Loss: 1.1146, Accuracy: 58.1861
+saving new model
+Epoch [16/300] private validation Loss: 1.1700, Accuracy: 55.5333
+saving new model
+Epoch [16/300] public validation Loss: 1.2339, Accuracy: 53.5377
+----------------------------------------------------------------------
+Epoch [17/300] Training Loss: 1.1042, Accuracy: 58.3588
+Epoch [17/300] private validation Loss: 1.2457, Accuracy: 53.1599
+Epoch [17/300] public validation Loss: 1.3187, Accuracy: 51.4179
+----------------------------------------------------------------------
+Epoch [18/300] Training Loss: 1.1011, Accuracy: 58.4452
+Epoch [18/300] private validation Loss: 1.1985, Accuracy: 55.1330
+Epoch [18/300] public validation Loss: 1.2769, Accuracy: 52.8788
+----------------------------------------------------------------------
+Epoch [19/300] Training Loss: 1.0844, Accuracy: 59.1902
+saving new model
+Epoch [19/300] private validation Loss: 1.1654, Accuracy: 56.1052
+Epoch [19/300] public validation Loss: 1.2342, Accuracy: 54.8267
+----------------------------------------------------------------------
+Epoch [20/300] Training Loss: 1.0941, Accuracy: 58.4992
+Epoch [20/300] private validation Loss: 1.3453, Accuracy: 50.9580
+Epoch [20/300] public validation Loss: 1.3820, Accuracy: 49.7565
+----------------------------------------------------------------------
+Epoch [21/300] Training Loss: 1.0846, Accuracy: 59.0211
+Epoch [21/300] private validation Loss: 1.2866, Accuracy: 53.5602
+Epoch [21/300] public validation Loss: 1.3792, Accuracy: 50.6732
+----------------------------------------------------------------------
+Epoch [22/300] Training Loss: 1.0765, Accuracy: 59.2010
+saving new model
+Epoch [22/300] private validation Loss: 1.1092, Accuracy: 57.6208
+saving new model
+Epoch [22/300] public validation Loss: 1.1801, Accuracy: 56.4022
+----------------------------------------------------------------------
+Epoch [23/300] Training Loss: 1.0634, Accuracy: 59.7373
+Epoch [23/300] private validation Loss: 1.1759, Accuracy: 56.2768
+Epoch [23/300] public validation Loss: 1.2340, Accuracy: 53.8528
+----------------------------------------------------------------------
+Epoch [24/300] Training Loss: 1.0560, Accuracy: 60.2591
+Epoch [24/300] private validation Loss: 1.1578, Accuracy: 57.0775
+Epoch [24/300] public validation Loss: 1.2199, Accuracy: 55.2564
+----------------------------------------------------------------------
+Epoch [25/300] Training Loss: 1.0555, Accuracy: 60.1332
+Epoch [25/300] private validation Loss: 1.1914, Accuracy: 55.5333
+Epoch [25/300] public validation Loss: 1.2831, Accuracy: 52.1054
+----------------------------------------------------------------------
+Epoch [26/300] Training Loss: 1.0515, Accuracy: 60.0000
+Epoch [26/300] private validation Loss: 1.1332, Accuracy: 57.3635
+Epoch [26/300] public validation Loss: 1.2083, Accuracy: 54.9699
+----------------------------------------------------------------------
+Epoch [27/300] Training Loss: 1.0498, Accuracy: 60.3203
+Epoch [27/300] private validation Loss: 1.2767, Accuracy: 50.7292
+Epoch [27/300] public validation Loss: 1.3778, Accuracy: 48.9831
+----------------------------------------------------------------------
+Epoch [28/300] Training Loss: 1.0466, Accuracy: 60.7414
+Epoch [28/300] private validation Loss: 1.2670, Accuracy: 54.3609
+Epoch [28/300] public validation Loss: 1.3022, Accuracy: 51.9622
+----------------------------------------------------------------------
+Epoch [29/300] Training Loss: 1.0415, Accuracy: 60.5830
+Epoch [29/300] private validation Loss: 1.1491, Accuracy: 57.2205
+Epoch [29/300] public validation Loss: 1.2133, Accuracy: 55.6574
+----------------------------------------------------------------------
+Epoch [30/300] Training Loss: 1.0396, Accuracy: 60.4967
+Epoch [30/300] private validation Loss: 1.1683, Accuracy: 57.6208
+Epoch [30/300] public validation Loss: 1.2180, Accuracy: 55.9725
+----------------------------------------------------------------------
+Epoch [31/300] Training Loss: 1.0407, Accuracy: 60.8134
+Epoch [31/300] private validation Loss: 1.2721, Accuracy: 52.7881
+Epoch [31/300] public validation Loss: 1.3393, Accuracy: 50.0716
+----------------------------------------------------------------------
+Epoch [32/300] Training Loss: 1.0271, Accuracy: 61.1697
+Epoch [32/300] private validation Loss: 1.1905, Accuracy: 55.3903
+Epoch [32/300] public validation Loss: 1.2213, Accuracy: 54.5975
+----------------------------------------------------------------------
+Epoch [33/300] Training Loss: 1.0226, Accuracy: 61.5152
+Epoch [33/300] private validation Loss: 1.2165, Accuracy: 56.3340
+Epoch [33/300] public validation Loss: 1.2837, Accuracy: 54.5116
+----------------------------------------------------------------------
+Epoch [34/300] Training Loss: 1.0227, Accuracy: 61.2561
+saving new model
+Epoch [34/300] private validation Loss: 1.0997, Accuracy: 58.6217
+saving new model
+Epoch [34/300] public validation Loss: 1.1631, Accuracy: 57.0324
+----------------------------------------------------------------------
+Epoch [35/300] Training Loss: 1.0140, Accuracy: 61.5152
+Epoch [35/300] private validation Loss: 1.1844, Accuracy: 56.1624
+Epoch [35/300] public validation Loss: 1.2279, Accuracy: 56.7459
+----------------------------------------------------------------------
+Epoch [36/300] Training Loss: 1.0160, Accuracy: 61.4972
+Epoch [36/300] private validation Loss: 1.1581, Accuracy: 57.2777
+Epoch [36/300] public validation Loss: 1.2206, Accuracy: 55.3710
+----------------------------------------------------------------------
+Epoch [37/300] Training Loss: 1.0131, Accuracy: 61.8175
+Epoch [37/300] private validation Loss: 1.1423, Accuracy: 56.8773
+Epoch [37/300] public validation Loss: 1.2005, Accuracy: 55.3996
+----------------------------------------------------------------------
+Epoch [38/300] Training Loss: 1.0090, Accuracy: 61.7096
+Epoch [38/300] private validation Loss: 1.1141, Accuracy: 58.9076
+Epoch [38/300] public validation Loss: 1.1732, Accuracy: 56.2303
+----------------------------------------------------------------------
+Epoch [39/300] Training Loss: 1.0110, Accuracy: 61.7060
+Epoch [39/300] private validation Loss: 1.1397, Accuracy: 57.8496
+Epoch [39/300] public validation Loss: 1.2307, Accuracy: 54.7121
+----------------------------------------------------------------------
+Epoch [40/300] Training Loss: 1.0136, Accuracy: 61.7240
+Epoch [40/300] private validation Loss: 1.1141, Accuracy: 58.0498
+Epoch [40/300] public validation Loss: 1.1709, Accuracy: 56.3735
+----------------------------------------------------------------------
+Epoch [41/300] Training Loss: 1.0038, Accuracy: 61.9435
+Epoch [41/300] private validation Loss: 1.2002, Accuracy: 53.9605
+Epoch [41/300] public validation Loss: 1.2732, Accuracy: 52.3632
+----------------------------------------------------------------------
+Epoch [42/300] Training Loss: 1.0033, Accuracy: 61.7671
+Epoch [42/300] private validation Loss: 1.1748, Accuracy: 56.0480
+Epoch [42/300] public validation Loss: 1.2121, Accuracy: 55.2850
+----------------------------------------------------------------------
+Epoch [43/300] Training Loss: 1.0037, Accuracy: 61.9975
+Epoch [43/300] private validation Loss: 1.1672, Accuracy: 57.1919
+Epoch [43/300] public validation Loss: 1.2173, Accuracy: 54.4257
+----------------------------------------------------------------------
+Epoch [44/300] Training Loss: 0.9957, Accuracy: 62.1270
+Epoch [44/300] private validation Loss: 1.1242, Accuracy: 58.6789
+Epoch [44/300] public validation Loss: 1.2044, Accuracy: 56.3449
+----------------------------------------------------------------------
+Epoch [45/300] Training Loss: 0.9983, Accuracy: 62.2494
+Epoch [45/300] private validation Loss: 1.2431, Accuracy: 53.1884
+Epoch [45/300] public validation Loss: 1.3796, Accuracy: 49.7279
+----------------------------------------------------------------------
+Epoch [46/300] Training Loss: 1.0022, Accuracy: 62.3286
+Epoch [46/300] private validation Loss: 1.1571, Accuracy: 56.9345
+Epoch [46/300] public validation Loss: 1.2593, Accuracy: 54.5975
+----------------------------------------------------------------------
+Epoch [47/300] Training Loss: 1.0076, Accuracy: 61.8463
+Epoch [47/300] private validation Loss: 1.2672, Accuracy: 54.5325
+Epoch [47/300] public validation Loss: 1.3092, Accuracy: 52.8788
+----------------------------------------------------------------------
+Epoch [48/300] Training Loss: 0.9969, Accuracy: 62.3790
+Epoch [48/300] private validation Loss: 1.1326, Accuracy: 58.3071
+Epoch [48/300] public validation Loss: 1.2353, Accuracy: 54.9699
+----------------------------------------------------------------------
+Epoch [49/300] Training Loss: 0.9851, Accuracy: 62.6345
+saving new model
+Epoch [49/300] private validation Loss: 1.0996, Accuracy: 58.5931
+Epoch [49/300] public validation Loss: 1.1881, Accuracy: 56.2876
+----------------------------------------------------------------------
+Epoch [50/300] Training Loss: 0.9878, Accuracy: 62.8145
+Epoch [50/300] private validation Loss: 1.1344, Accuracy: 58.0212
+Epoch [50/300] public validation Loss: 1.1901, Accuracy: 55.6860
+----------------------------------------------------------------------
+Epoch [51/300] Training Loss: 0.9934, Accuracy: 62.4654
+Epoch [51/300] private validation Loss: 1.1690, Accuracy: 56.3626
+Epoch [51/300] public validation Loss: 1.2307, Accuracy: 53.6809
+----------------------------------------------------------------------
+Epoch [52/300] Training Loss: 0.9844, Accuracy: 62.5949
+Epoch [52/300] private validation Loss: 1.1005, Accuracy: 58.5645
+saving new model
+Epoch [52/300] public validation Loss: 1.1489, Accuracy: 55.5142
+----------------------------------------------------------------------
+Epoch [53/300] Training Loss: 0.9797, Accuracy: 62.8972
+Epoch [53/300] private validation Loss: 1.1415, Accuracy: 56.7915
+Epoch [53/300] public validation Loss: 1.1747, Accuracy: 56.8891
+----------------------------------------------------------------------
+Epoch [54/300] Training Loss: 0.9821, Accuracy: 62.9152
+Epoch [54/300] private validation Loss: 1.1529, Accuracy: 57.8782
+Epoch [54/300] public validation Loss: 1.2414, Accuracy: 54.8553
+----------------------------------------------------------------------
+Epoch [55/300] Training Loss: 0.9791, Accuracy: 62.6669
+Epoch [55/300] private validation Loss: 1.2210, Accuracy: 54.1321
+Epoch [55/300] public validation Loss: 1.3009, Accuracy: 53.3944
+----------------------------------------------------------------------
+Epoch [56/300] Training Loss: 0.9815, Accuracy: 63.1204
+Epoch [56/300] private validation Loss: 1.2603, Accuracy: 54.5325
+Epoch [56/300] public validation Loss: 1.2837, Accuracy: 54.3684
+----------------------------------------------------------------------
+Epoch [57/300] Training Loss: 0.9779, Accuracy: 63.0232
+Epoch [57/300] private validation Loss: 1.2911, Accuracy: 54.8470
+Epoch [57/300] public validation Loss: 1.3241, Accuracy: 52.6210
+----------------------------------------------------------------------
+Epoch [58/300] Training Loss: 0.9768, Accuracy: 63.2140
+Epoch [58/300] private validation Loss: 1.1123, Accuracy: 59.0792
+Epoch [58/300] public validation Loss: 1.1514, Accuracy: 57.0897
+----------------------------------------------------------------------
+Epoch [59/300] Training Loss: 0.9828, Accuracy: 63.1636
+Epoch [59/300] private validation Loss: 1.2298, Accuracy: 54.7326
+Epoch [59/300] public validation Loss: 1.3032, Accuracy: 52.8788
+----------------------------------------------------------------------
+Epoch [60/300] Training Loss: 0.9827, Accuracy: 63.0052
+Epoch [60/300] private validation Loss: 1.2351, Accuracy: 55.7049
+Epoch [60/300] public validation Loss: 1.3124, Accuracy: 54.3970
+----------------------------------------------------------------------
+Epoch [61/300] Training Loss: 0.9778, Accuracy: 63.0592
+Epoch [61/300] private validation Loss: 1.1257, Accuracy: 57.8210
+Epoch [61/300] public validation Loss: 1.1777, Accuracy: 56.5740
+----------------------------------------------------------------------
+Epoch [62/300] Training Loss: 0.9740, Accuracy: 63.2536
+Epoch [62/300] private validation Loss: 1.2048, Accuracy: 55.3617
+Epoch [62/300] public validation Loss: 1.3025, Accuracy: 51.3320
+----------------------------------------------------------------------
+Epoch [63/300] Training Loss: 0.9725, Accuracy: 63.4155
+Epoch [63/300] private validation Loss: 1.2641, Accuracy: 55.5905
+Epoch [63/300] public validation Loss: 1.3141, Accuracy: 52.7929
+----------------------------------------------------------------------
+Epoch [64/300] Training Loss: 0.9817, Accuracy: 62.8757
+Epoch [64/300] private validation Loss: 1.1162, Accuracy: 58.3929
+Epoch [64/300] public validation Loss: 1.2110, Accuracy: 55.3996
+----------------------------------------------------------------------
+Epoch [65/300] Training Loss: 0.9656, Accuracy: 63.2823
+Epoch [65/300] private validation Loss: 1.2280, Accuracy: 55.3045
+Epoch [65/300] public validation Loss: 1.2632, Accuracy: 54.5975
+----------------------------------------------------------------------
+Epoch [66/300] Training Loss: 0.9665, Accuracy: 63.2284
+Epoch [66/300] private validation Loss: 1.1430, Accuracy: 58.1355
+Epoch [66/300] public validation Loss: 1.2113, Accuracy: 55.3423
+----------------------------------------------------------------------
+Epoch [67/300] Training Loss: 0.9730, Accuracy: 63.3399
+Epoch [67/300] private validation Loss: 1.2564, Accuracy: 56.3340
+Epoch [67/300] public validation Loss: 1.2962, Accuracy: 54.6835
+----------------------------------------------------------------------
+Epoch [68/300] Training Loss: 0.9813, Accuracy: 62.8829
+Epoch [68/300] private validation Loss: 1.1513, Accuracy: 57.3635
+Epoch [68/300] public validation Loss: 1.2230, Accuracy: 55.7720
+----------------------------------------------------------------------
+Epoch [69/300] Training Loss: 0.9730, Accuracy: 63.0808
+Epoch [69/300] private validation Loss: 1.1052, Accuracy: 60.7664
+Epoch [69/300] public validation Loss: 1.2010, Accuracy: 57.4334
+----------------------------------------------------------------------
+Epoch [70/300] Training Loss: 0.9608, Accuracy: 63.7862
+Epoch [70/300] private validation Loss: 1.2009, Accuracy: 57.4206
+Epoch [70/300] public validation Loss: 1.2753, Accuracy: 55.5715
+----------------------------------------------------------------------
+Epoch [71/300] Training Loss: 0.9658, Accuracy: 63.5775
+Epoch [71/300] private validation Loss: 1.1214, Accuracy: 58.2499
+Epoch [71/300] public validation Loss: 1.1779, Accuracy: 56.2303
+----------------------------------------------------------------------
+Epoch [72/300] Training Loss: 0.9798, Accuracy: 63.1960
+Epoch [72/300] private validation Loss: 1.1706, Accuracy: 55.3617
+Epoch [72/300] public validation Loss: 1.2061, Accuracy: 56.1157
+----------------------------------------------------------------------
+Epoch [73/300] Training Loss: 0.9639, Accuracy: 63.8978
+Epoch [73/300] private validation Loss: 1.1428, Accuracy: 57.9926
+Epoch [73/300] public validation Loss: 1.1983, Accuracy: 56.9464
+----------------------------------------------------------------------
+Epoch [74/300] Training Loss: 0.9618, Accuracy: 63.7826
+Epoch [74/300] private validation Loss: 1.1999, Accuracy: 54.9328
+Epoch [74/300] public validation Loss: 1.2304, Accuracy: 55.3423
+----------------------------------------------------------------------
+Epoch [75/300] Training Loss: 0.9579, Accuracy: 63.5847
+saving new model
+Epoch [75/300] private validation Loss: 1.0710, Accuracy: 59.7941
+saving new model
+Epoch [75/300] public validation Loss: 1.1454, Accuracy: 57.2615
+----------------------------------------------------------------------
+Epoch [76/300] Training Loss: 0.9560, Accuracy: 63.4875
+Epoch [76/300] private validation Loss: 1.1837, Accuracy: 57.0775
+Epoch [76/300] public validation Loss: 1.2967, Accuracy: 54.9126
+----------------------------------------------------------------------
+Epoch [77/300] Training Loss: 0.9615, Accuracy: 63.7934
+Epoch [77/300] private validation Loss: 1.1494, Accuracy: 57.4206
+Epoch [77/300] public validation Loss: 1.2376, Accuracy: 54.8267
+----------------------------------------------------------------------
+Epoch [78/300] Training Loss: 0.9619, Accuracy: 63.4407
+Epoch [78/300] private validation Loss: 1.0955, Accuracy: 59.5653
+saving new model
+Epoch [78/300] public validation Loss: 1.1075, Accuracy: 59.2094
+----------------------------------------------------------------------
+Epoch [79/300] Training Loss: 0.9539, Accuracy: 63.8078
+Epoch [79/300] private validation Loss: 1.2099, Accuracy: 56.7057
+Epoch [79/300] public validation Loss: 1.2253, Accuracy: 55.8866
+----------------------------------------------------------------------
+Epoch [80/300] Training Loss: 0.9586, Accuracy: 63.9122
+Epoch [80/300] private validation Loss: 1.1323, Accuracy: 57.9926
+Epoch [80/300] public validation Loss: 1.1634, Accuracy: 56.3449
+----------------------------------------------------------------------
+Epoch [81/300] Training Loss: 0.9528, Accuracy: 63.8150
+Epoch [81/300] private validation Loss: 1.2016, Accuracy: 58.0212
+Epoch [81/300] public validation Loss: 1.2396, Accuracy: 55.3996
+----------------------------------------------------------------------
+Epoch [82/300] Training Loss: 0.9575, Accuracy: 63.9482
+Epoch [82/300] private validation Loss: 1.2113, Accuracy: 57.2777
+Epoch [82/300] public validation Loss: 1.2261, Accuracy: 56.0584
+----------------------------------------------------------------------
+Epoch [83/300] Training Loss: 0.9593, Accuracy: 64.0777
+Epoch [83/300] private validation Loss: 1.1537, Accuracy: 56.7629
+Epoch [83/300] public validation Loss: 1.2326, Accuracy: 56.9751
+----------------------------------------------------------------------
+Epoch [84/300] Training Loss: 0.9483, Accuracy: 64.1209
+Epoch [84/300] private validation Loss: 1.2527, Accuracy: 55.0472
+Epoch [84/300] public validation Loss: 1.3473, Accuracy: 53.8814
+----------------------------------------------------------------------
+Epoch [85/300] Training Loss: 0.9602, Accuracy: 63.7394
+Epoch [85/300] private validation Loss: 1.1297, Accuracy: 57.9068
+Epoch [85/300] public validation Loss: 1.1558, Accuracy: 56.8319
+----------------------------------------------------------------------
+Epoch [86/300] Training Loss: 0.9438, Accuracy: 64.4412
+Epoch [86/300] private validation Loss: 1.2042, Accuracy: 57.9354
+Epoch [86/300] public validation Loss: 1.2737, Accuracy: 56.0298
+----------------------------------------------------------------------
+Epoch [87/300] Training Loss: 0.9389, Accuracy: 64.3909
+Epoch [87/300] private validation Loss: 1.1648, Accuracy: 57.6494
+Epoch [87/300] public validation Loss: 1.2329, Accuracy: 57.1756
+----------------------------------------------------------------------
+Epoch [88/300] Training Loss: 0.9491, Accuracy: 64.4232
+Epoch [88/300] private validation Loss: 1.1665, Accuracy: 56.3912
+Epoch [88/300] public validation Loss: 1.2225, Accuracy: 54.7694
+----------------------------------------------------------------------
+Epoch [89/300] Training Loss: 0.9545, Accuracy: 63.6854
+Epoch [89/300] private validation Loss: 1.1667, Accuracy: 58.2213
+Epoch [89/300] public validation Loss: 1.2152, Accuracy: 57.5193
+----------------------------------------------------------------------
+Epoch [90/300] Training Loss: 0.9511, Accuracy: 64.3981
+Epoch [90/300] private validation Loss: 1.1895, Accuracy: 56.9631
+Epoch [90/300] public validation Loss: 1.2546, Accuracy: 53.6236
+----------------------------------------------------------------------
+Epoch [91/300] Training Loss: 0.9622, Accuracy: 63.5199
+Epoch [91/300] private validation Loss: 1.0900, Accuracy: 60.3088
+Epoch [91/300] public validation Loss: 1.1649, Accuracy: 57.5480
+----------------------------------------------------------------------
+Epoch [92/300] Training Loss: 0.9561, Accuracy: 63.9914
+Epoch [92/300] private validation Loss: 1.1816, Accuracy: 57.6780
+Epoch [92/300] public validation Loss: 1.2502, Accuracy: 55.8293
+----------------------------------------------------------------------
+Epoch [93/300] Training Loss: 0.9443, Accuracy: 64.2721
+Epoch [93/300] private validation Loss: 1.2442, Accuracy: 57.5922
+Epoch [93/300] public validation Loss: 1.2929, Accuracy: 55.3423
+----------------------------------------------------------------------
+Epoch [94/300] Training Loss: 0.9479, Accuracy: 64.1137
+Epoch [94/300] private validation Loss: 1.1133, Accuracy: 60.2230
+Epoch [94/300] public validation Loss: 1.1781, Accuracy: 57.8058
+----------------------------------------------------------------------
+Epoch [95/300] Training Loss: 0.9491, Accuracy: 63.9806
+Epoch [95/300] private validation Loss: 1.1852, Accuracy: 56.3054
+Epoch [95/300] public validation Loss: 1.2481, Accuracy: 55.6288
+----------------------------------------------------------------------
+Epoch [96/300] Training Loss: 0.9428, Accuracy: 64.3297
+Epoch [96/300] private validation Loss: 1.1462, Accuracy: 59.1364
+Epoch [96/300] public validation Loss: 1.1552, Accuracy: 57.7199
+----------------------------------------------------------------------
+Epoch [97/300] Training Loss: 0.9427, Accuracy: 64.0885
+Epoch [97/300] private validation Loss: 1.1268, Accuracy: 58.1927
+Epoch [97/300] public validation Loss: 1.1689, Accuracy: 57.4620
+----------------------------------------------------------------------
+Epoch [98/300] Training Loss: 0.9385, Accuracy: 64.4448
+Epoch [98/300] private validation Loss: 1.1685, Accuracy: 57.5350
+Epoch [98/300] public validation Loss: 1.1907, Accuracy: 54.6262
+----------------------------------------------------------------------
+Epoch [99/300] Training Loss: 0.9448, Accuracy: 64.3765
+Epoch [99/300] private validation Loss: 1.1067, Accuracy: 59.9657
+Epoch [99/300] public validation Loss: 1.1766, Accuracy: 57.7771
+----------------------------------------------------------------------
+Epoch [100/300] Training Loss: 0.9484, Accuracy: 64.2037
+Epoch [100/300] private validation Loss: 1.1261, Accuracy: 59.3652
+Epoch [100/300] public validation Loss: 1.2098, Accuracy: 54.9986
+----------------------------------------------------------------------
+Epoch [101/300] Training Loss: 0.9420, Accuracy: 64.2973
+Epoch [101/300] private validation Loss: 1.0841, Accuracy: 59.9085
+Epoch [101/300] public validation Loss: 1.1363, Accuracy: 58.7511
+----------------------------------------------------------------------
+Epoch [102/300] Training Loss: 0.9396, Accuracy: 64.4880
+Epoch [102/300] private validation Loss: 1.1059, Accuracy: 59.6225
+Epoch [102/300] public validation Loss: 1.2112, Accuracy: 56.6313
+----------------------------------------------------------------------
+Epoch [103/300] Training Loss: 0.9309, Accuracy: 65.1035
+Epoch [103/300] private validation Loss: 1.1291, Accuracy: 59.7369
+Epoch [103/300] public validation Loss: 1.1938, Accuracy: 57.9204
+----------------------------------------------------------------------
+Epoch [104/300] Training Loss: 0.9398, Accuracy: 64.4952
+Epoch [104/300] private validation Loss: 1.2203, Accuracy: 57.0775
+Epoch [104/300] public validation Loss: 1.3100, Accuracy: 54.5402
+----------------------------------------------------------------------
+Epoch [105/300] Training Loss: 0.9427, Accuracy: 64.3981
+Epoch [105/300] private validation Loss: 1.3130, Accuracy: 54.2179
+Epoch [105/300] public validation Loss: 1.3620, Accuracy: 53.6236
+----------------------------------------------------------------------
+Epoch [106/300] Training Loss: 0.9351, Accuracy: 64.8335
+Epoch [106/300] private validation Loss: 1.1950, Accuracy: 58.2213
+Epoch [106/300] public validation Loss: 1.2811, Accuracy: 54.8267
+----------------------------------------------------------------------
+Epoch [107/300] Training Loss: 0.9331, Accuracy: 64.8048
+Epoch [107/300] private validation Loss: 1.1261, Accuracy: 59.7655
+Epoch [107/300] public validation Loss: 1.2003, Accuracy: 56.4881
+----------------------------------------------------------------------
+Epoch [108/300] Training Loss: 0.9308, Accuracy: 64.6284
+Epoch [108/300] private validation Loss: 1.1646, Accuracy: 56.4484
+Epoch [108/300] public validation Loss: 1.1976, Accuracy: 56.0871
+----------------------------------------------------------------------
+Epoch [109/300] Training Loss: 0.9319, Accuracy: 64.6752
+Epoch [109/300] private validation Loss: 1.1226, Accuracy: 58.6789
+Epoch [109/300] public validation Loss: 1.1703, Accuracy: 57.8917
+----------------------------------------------------------------------
+Epoch [110/300] Training Loss: 0.9339, Accuracy: 64.5744
+Epoch [110/300] private validation Loss: 1.1705, Accuracy: 57.4492
+Epoch [110/300] public validation Loss: 1.2246, Accuracy: 55.7147
+----------------------------------------------------------------------
+Epoch [111/300] Training Loss: 0.9308, Accuracy: 64.4053
+Epoch [111/300] private validation Loss: 1.1862, Accuracy: 56.3054
+Epoch [111/300] public validation Loss: 1.2398, Accuracy: 53.8814
+----------------------------------------------------------------------
+Epoch [112/300] Training Loss: 0.9317, Accuracy: 64.7508
+saving new model
+Epoch [112/300] private validation Loss: 1.0578, Accuracy: 60.7664
+Epoch [112/300] public validation Loss: 1.1338, Accuracy: 58.8657
+----------------------------------------------------------------------
+Epoch [113/300] Training Loss: 0.9380, Accuracy: 64.5528
+Epoch [113/300] private validation Loss: 1.2906, Accuracy: 54.1035
+Epoch [113/300] public validation Loss: 1.2928, Accuracy: 54.3684
+----------------------------------------------------------------------
+Epoch [114/300] Training Loss: 0.9328, Accuracy: 64.9955
+Epoch [114/300] private validation Loss: 1.1211, Accuracy: 60.3088
+Epoch [114/300] public validation Loss: 1.1847, Accuracy: 56.2017
+----------------------------------------------------------------------
+Epoch [115/300] Training Loss: 0.9221, Accuracy: 65.2294
+Epoch [115/300] private validation Loss: 1.1816, Accuracy: 57.8210
+Epoch [115/300] public validation Loss: 1.2445, Accuracy: 55.3137
+----------------------------------------------------------------------
+Epoch [116/300] Training Loss: 0.9177, Accuracy: 65.2726
+Epoch [116/300] private validation Loss: 1.1057, Accuracy: 59.7941
+Epoch [116/300] public validation Loss: 1.1248, Accuracy: 59.2667
+----------------------------------------------------------------------
+Epoch [117/300] Training Loss: 0.9224, Accuracy: 65.1683
+Epoch [117/300] private validation Loss: 1.1079, Accuracy: 60.0801
+Epoch [117/300] public validation Loss: 1.1474, Accuracy: 57.9204
+----------------------------------------------------------------------
+Epoch [118/300] Training Loss: 0.9106, Accuracy: 65.2294
+Epoch [118/300] private validation Loss: 1.1160, Accuracy: 58.2213
+Epoch [118/300] public validation Loss: 1.1408, Accuracy: 58.5792
+----------------------------------------------------------------------
+Epoch [119/300] Training Loss: 0.9084, Accuracy: 65.5174
+Epoch [119/300] private validation Loss: 1.2464, Accuracy: 54.7612
+Epoch [119/300] public validation Loss: 1.3033, Accuracy: 54.2824
+----------------------------------------------------------------------
+Epoch [120/300] Training Loss: 0.9116, Accuracy: 65.5354
+Epoch [120/300] private validation Loss: 1.1612, Accuracy: 58.0784
+Epoch [120/300] public validation Loss: 1.1764, Accuracy: 58.8657
+----------------------------------------------------------------------
+Epoch [121/300] Training Loss: 0.9153, Accuracy: 65.5282
+Epoch [121/300] private validation Loss: 1.1525, Accuracy: 59.1364
+Epoch [121/300] public validation Loss: 1.2198, Accuracy: 57.9204
+----------------------------------------------------------------------
+Epoch [122/300] Training Loss: 0.9121, Accuracy: 65.6181
+Epoch [122/300] private validation Loss: 1.2270, Accuracy: 57.3349
+Epoch [122/300] public validation Loss: 1.2778, Accuracy: 56.9178
+----------------------------------------------------------------------
+Epoch [123/300] Training Loss: 0.9181, Accuracy: 65.2474
+Epoch [123/300] private validation Loss: 1.1140, Accuracy: 59.7369
+Epoch [123/300] public validation Loss: 1.1714, Accuracy: 58.6078
+----------------------------------------------------------------------
+Epoch [124/300] Training Loss: 0.9064, Accuracy: 66.1076
+Epoch [124/300] private validation Loss: 1.1474, Accuracy: 58.9934
+Epoch [124/300] public validation Loss: 1.2112, Accuracy: 58.5219
+----------------------------------------------------------------------
+Epoch [125/300] Training Loss: 0.9110, Accuracy: 65.6757
+Epoch [125/300] private validation Loss: 1.2218, Accuracy: 57.6208
+Epoch [125/300] public validation Loss: 1.3205, Accuracy: 54.9986
+----------------------------------------------------------------------
+Epoch [126/300] Training Loss: 0.9161, Accuracy: 65.2186
+Epoch [126/300] private validation Loss: 1.0763, Accuracy: 60.2230
+Epoch [126/300] public validation Loss: 1.1265, Accuracy: 58.1495
+----------------------------------------------------------------------
+Epoch [127/300] Training Loss: 0.9070, Accuracy: 65.6505
+Epoch [127/300] private validation Loss: 1.1887, Accuracy: 58.7647
+Epoch [127/300] public validation Loss: 1.2959, Accuracy: 54.2538
+----------------------------------------------------------------------
+Epoch [128/300] Training Loss: 0.9187, Accuracy: 65.3914
+Epoch [128/300] private validation Loss: 1.1379, Accuracy: 59.2508
+Epoch [128/300] public validation Loss: 1.1842, Accuracy: 57.4048
+----------------------------------------------------------------------
+Epoch [129/300] Training Loss: 0.9049, Accuracy: 66.0536
+Epoch [129/300] private validation Loss: 1.2042, Accuracy: 55.2760
+Epoch [129/300] public validation Loss: 1.2564, Accuracy: 54.5689
+----------------------------------------------------------------------
+Epoch [130/300] Training Loss: 0.9175, Accuracy: 65.5570
+Epoch [130/300] private validation Loss: 1.1383, Accuracy: 60.7378
+Epoch [130/300] public validation Loss: 1.1795, Accuracy: 58.6365
+----------------------------------------------------------------------
+Epoch [131/300] Training Loss: 0.8975, Accuracy: 66.0752
+Epoch [131/300] private validation Loss: 1.3045, Accuracy: 53.0455
+Epoch [131/300] public validation Loss: 1.3853, Accuracy: 52.0195
+----------------------------------------------------------------------
+Epoch [132/300] Training Loss: 0.8868, Accuracy: 66.4963
+Epoch [132/300] private validation Loss: 1.2259, Accuracy: 57.5064
+Epoch [132/300] public validation Loss: 1.2947, Accuracy: 56.7173
+----------------------------------------------------------------------
+Epoch [133/300] Training Loss: 0.8992, Accuracy: 66.0320
+Epoch [133/300] private validation Loss: 1.1951, Accuracy: 57.8210
+Epoch [133/300] public validation Loss: 1.2531, Accuracy: 55.9725
+----------------------------------------------------------------------
+Epoch [134/300] Training Loss: 0.8962, Accuracy: 66.0968
+Epoch [134/300] private validation Loss: 1.1609, Accuracy: 57.2777
+Epoch [134/300] public validation Loss: 1.2137, Accuracy: 56.0584
+----------------------------------------------------------------------
+Epoch [135/300] Training Loss: 0.8954, Accuracy: 66.6979
+Epoch [135/300] private validation Loss: 1.1393, Accuracy: 60.3088
+Epoch [135/300] public validation Loss: 1.1772, Accuracy: 57.4048
+----------------------------------------------------------------------
+Epoch [136/300] Training Loss: 0.8927, Accuracy: 66.4783
+Epoch [136/300] private validation Loss: 1.1237, Accuracy: 58.6789
+Epoch [136/300] public validation Loss: 1.1969, Accuracy: 58.5219
+----------------------------------------------------------------------
+Epoch [137/300] Training Loss: 0.8885, Accuracy: 66.4171
+Epoch [137/300] private validation Loss: 1.2095, Accuracy: 56.0480
+Epoch [137/300] public validation Loss: 1.2290, Accuracy: 56.6886
+----------------------------------------------------------------------
+Epoch [138/300] Training Loss: 0.8966, Accuracy: 66.0536
+Epoch [138/300] private validation Loss: 1.1677, Accuracy: 56.9631
+Epoch [138/300] public validation Loss: 1.2112, Accuracy: 55.4282
+----------------------------------------------------------------------
+Epoch [139/300] Training Loss: 0.8888, Accuracy: 66.4207
+Epoch [139/300] private validation Loss: 1.2775, Accuracy: 54.3037
+Epoch [139/300] public validation Loss: 1.3598, Accuracy: 53.2799
+----------------------------------------------------------------------
+Epoch [140/300] Training Loss: 0.8867, Accuracy: 66.4999
+Epoch [140/300] private validation Loss: 1.2386, Accuracy: 55.3617
+Epoch [140/300] public validation Loss: 1.3426, Accuracy: 52.9648
+----------------------------------------------------------------------
+Epoch [141/300] Training Loss: 0.8858, Accuracy: 66.3452
+Epoch [141/300] private validation Loss: 1.1594, Accuracy: 58.8218
+Epoch [141/300] public validation Loss: 1.2314, Accuracy: 56.7459
+----------------------------------------------------------------------
+Epoch [142/300] Training Loss: 0.8868, Accuracy: 66.4675
+Epoch [142/300] private validation Loss: 1.1898, Accuracy: 56.3340
+Epoch [142/300] public validation Loss: 1.2388, Accuracy: 56.5740
+----------------------------------------------------------------------
+Epoch [143/300] Training Loss: 0.8856, Accuracy: 66.4099
+Epoch [143/300] private validation Loss: 1.1684, Accuracy: 58.3357
+Epoch [143/300] public validation Loss: 1.2239, Accuracy: 56.4022
+----------------------------------------------------------------------
+Epoch [144/300] Training Loss: 0.8902, Accuracy: 66.3775
+Epoch [144/300] private validation Loss: 1.2220, Accuracy: 56.9631
+Epoch [144/300] public validation Loss: 1.2439, Accuracy: 55.9725
+----------------------------------------------------------------------
+Epoch [145/300] Training Loss: 0.8867, Accuracy: 66.3344
+Epoch [145/300] private validation Loss: 1.3892, Accuracy: 51.3583
+Epoch [145/300] public validation Loss: 1.3988, Accuracy: 51.3320
+----------------------------------------------------------------------
+Epoch [146/300] Training Loss: 0.8699, Accuracy: 66.7878
+Epoch [146/300] private validation Loss: 1.1272, Accuracy: 59.3938
+Epoch [146/300] public validation Loss: 1.2089, Accuracy: 57.5193
+----------------------------------------------------------------------
+Epoch [147/300] Training Loss: 0.8634, Accuracy: 67.4105
+Epoch [147/300] private validation Loss: 1.1755, Accuracy: 60.5376
+Epoch [147/300] public validation Loss: 1.2239, Accuracy: 57.1183
+----------------------------------------------------------------------
+Epoch [148/300] Training Loss: 0.8701, Accuracy: 67.0362
+Epoch [148/300] private validation Loss: 1.2789, Accuracy: 55.9051
+Epoch [148/300] public validation Loss: 1.2977, Accuracy: 54.3111
+----------------------------------------------------------------------
+Epoch [149/300] Training Loss: 0.8668, Accuracy: 67.4177
+Epoch [149/300] private validation Loss: 1.0830, Accuracy: 60.1373
+Epoch [149/300] public validation Loss: 1.1410, Accuracy: 58.8370
+----------------------------------------------------------------------
+Epoch [150/300] Training Loss: 0.8710, Accuracy: 67.0218
+Epoch [150/300] private validation Loss: 1.1129, Accuracy: 59.5081
+Epoch [150/300] public validation Loss: 1.1781, Accuracy: 56.8319
+----------------------------------------------------------------------
+Epoch [151/300] Training Loss: 0.8697, Accuracy: 67.2017
+Epoch [151/300] private validation Loss: 1.1237, Accuracy: 60.6520
+Epoch [151/300] public validation Loss: 1.1847, Accuracy: 57.0037
+----------------------------------------------------------------------
+Epoch [152/300] Training Loss: 0.8679, Accuracy: 67.2593
+Epoch [152/300] private validation Loss: 1.2213, Accuracy: 59.4796
+Epoch [152/300] public validation Loss: 1.3229, Accuracy: 55.7147
+----------------------------------------------------------------------
+Epoch [153/300] Training Loss: 0.8626, Accuracy: 67.3889
+Epoch [153/300] private validation Loss: 1.1622, Accuracy: 60.1945
+Epoch [153/300] public validation Loss: 1.2845, Accuracy: 55.6860
+----------------------------------------------------------------------
+Epoch [154/300] Training Loss: 0.8696, Accuracy: 67.1405
+Epoch [154/300] private validation Loss: 1.2509, Accuracy: 57.8210
+Epoch [154/300] public validation Loss: 1.2981, Accuracy: 56.1157
+----------------------------------------------------------------------
+Epoch [155/300] Training Loss: 0.8787, Accuracy: 66.7015
+Epoch [155/300] private validation Loss: 1.1702, Accuracy: 57.3921
+Epoch [155/300] public validation Loss: 1.2047, Accuracy: 54.9126
+----------------------------------------------------------------------
+Epoch [156/300] Training Loss: 0.8707, Accuracy: 67.0578
+Epoch [156/300] private validation Loss: 1.0708, Accuracy: 60.9951
+Epoch [156/300] public validation Loss: 1.1265, Accuracy: 58.3787
+----------------------------------------------------------------------
+Epoch [157/300] Training Loss: 0.8783, Accuracy: 66.9534
+Epoch [157/300] private validation Loss: 1.2282, Accuracy: 55.9623
+Epoch [157/300] public validation Loss: 1.3014, Accuracy: 54.2824
+----------------------------------------------------------------------
+Epoch [158/300] Training Loss: 0.8792, Accuracy: 66.7267
+Epoch [158/300] private validation Loss: 1.1952, Accuracy: 58.5073
+Epoch [158/300] public validation Loss: 1.2645, Accuracy: 56.3162
+----------------------------------------------------------------------
+Epoch [159/300] Training Loss: 0.8750, Accuracy: 66.8742
+Epoch [159/300] private validation Loss: 1.2002, Accuracy: 56.5914
+Epoch [159/300] public validation Loss: 1.3172, Accuracy: 54.7408
+----------------------------------------------------------------------
+Epoch [160/300] Training Loss: 0.8617, Accuracy: 67.7200
+Epoch [160/300] private validation Loss: 1.1733, Accuracy: 60.1087
+Epoch [160/300] public validation Loss: 1.2524, Accuracy: 56.8605
+----------------------------------------------------------------------
+Epoch [161/300] Training Loss: 0.8525, Accuracy: 67.7956
+Epoch [161/300] private validation Loss: 1.1584, Accuracy: 59.3366
+Epoch [161/300] public validation Loss: 1.2659, Accuracy: 56.5168
+----------------------------------------------------------------------
+Epoch [162/300] Training Loss: 0.8516, Accuracy: 67.6300
+Epoch [162/300] private validation Loss: 1.1472, Accuracy: 59.9371
+Epoch [162/300] public validation Loss: 1.2268, Accuracy: 58.8370
+----------------------------------------------------------------------
+Epoch [163/300] Training Loss: 0.8478, Accuracy: 67.8568
+Epoch [163/300] private validation Loss: 1.1048, Accuracy: 60.0801
+Epoch [163/300] public validation Loss: 1.1527, Accuracy: 58.0349
+----------------------------------------------------------------------
+Epoch [164/300] Training Loss: 0.8476, Accuracy: 68.5046
+Epoch [164/300] private validation Loss: 1.1540, Accuracy: 60.3088
+Epoch [164/300] public validation Loss: 1.2022, Accuracy: 58.0922
+----------------------------------------------------------------------
+Epoch [165/300] Training Loss: 0.8553, Accuracy: 67.6516
+Epoch [165/300] private validation Loss: 1.2167, Accuracy: 58.3643
+Epoch [165/300] public validation Loss: 1.2475, Accuracy: 57.0324
+----------------------------------------------------------------------
+Epoch [166/300] Training Loss: 0.8494, Accuracy: 67.8784
+Epoch [166/300] private validation Loss: 1.1303, Accuracy: 59.7369
+Epoch [166/300] public validation Loss: 1.2057, Accuracy: 56.5740
+----------------------------------------------------------------------
+Epoch [167/300] Training Loss: 0.8485, Accuracy: 68.0007
+Epoch [167/300] private validation Loss: 1.0730, Accuracy: 62.3391
+Epoch [167/300] public validation Loss: 1.1507, Accuracy: 58.7797
+----------------------------------------------------------------------
+Epoch [168/300] Training Loss: 0.8491, Accuracy: 68.1015
+Epoch [168/300] private validation Loss: 1.0719, Accuracy: 61.2525
+saving new model
+Epoch [168/300] public validation Loss: 1.1009, Accuracy: 59.0089
+----------------------------------------------------------------------
+Epoch [169/300] Training Loss: 0.8485, Accuracy: 68.0655
+Epoch [169/300] private validation Loss: 1.1279, Accuracy: 59.4796
+Epoch [169/300] public validation Loss: 1.1965, Accuracy: 58.0636
+----------------------------------------------------------------------
+Epoch [170/300] Training Loss: 0.8521, Accuracy: 67.8136
+Epoch [170/300] private validation Loss: 1.1545, Accuracy: 60.9951
+Epoch [170/300] public validation Loss: 1.1858, Accuracy: 58.8370
+----------------------------------------------------------------------
+Epoch [171/300] Training Loss: 0.8492, Accuracy: 67.8316
+Epoch [171/300] private validation Loss: 1.1178, Accuracy: 61.5385
+Epoch [171/300] public validation Loss: 1.1662, Accuracy: 58.7797
+----------------------------------------------------------------------
+Epoch [172/300] Training Loss: 0.8619, Accuracy: 67.4249
+Epoch [172/300] private validation Loss: 1.1833, Accuracy: 59.5653
+Epoch [172/300] public validation Loss: 1.2559, Accuracy: 57.2329
+----------------------------------------------------------------------
+Epoch [173/300] Training Loss: 0.8489, Accuracy: 68.1483
+Epoch [173/300] private validation Loss: 1.2001, Accuracy: 57.3921
+Epoch [173/300] public validation Loss: 1.2539, Accuracy: 56.6600
+----------------------------------------------------------------------
+Epoch [174/300] Training Loss: 0.8552, Accuracy: 67.7344
+Epoch [174/300] private validation Loss: 1.1435, Accuracy: 60.3374
+Epoch [174/300] public validation Loss: 1.2419, Accuracy: 57.0610
+----------------------------------------------------------------------
+Epoch [175/300] Training Loss: 0.8429, Accuracy: 68.2599
+Epoch [175/300] private validation Loss: 1.1655, Accuracy: 58.7075
+Epoch [175/300] public validation Loss: 1.2756, Accuracy: 56.1730
+----------------------------------------------------------------------
+Epoch [176/300] Training Loss: 0.8329, Accuracy: 68.5982
+Epoch [176/300] private validation Loss: 1.1736, Accuracy: 60.5948
+Epoch [176/300] public validation Loss: 1.2550, Accuracy: 56.5740
+----------------------------------------------------------------------
+Epoch [177/300] Training Loss: 0.8370, Accuracy: 68.5802
+Epoch [177/300] private validation Loss: 1.2268, Accuracy: 57.1633
+Epoch [177/300] public validation Loss: 1.2414, Accuracy: 57.2902
+----------------------------------------------------------------------
+Epoch [178/300] Training Loss: 0.8323, Accuracy: 68.9113
+Epoch [178/300] private validation Loss: 1.3060, Accuracy: 58.9934
+Epoch [178/300] public validation Loss: 1.4141, Accuracy: 55.0845
+----------------------------------------------------------------------
+Epoch [179/300] Training Loss: 0.8424, Accuracy: 68.1339
+Epoch [179/300] private validation Loss: 1.1038, Accuracy: 61.3669
+Epoch [179/300] public validation Loss: 1.2035, Accuracy: 57.8917
+----------------------------------------------------------------------
+Epoch [180/300] Training Loss: 0.8349, Accuracy: 68.4830
+Epoch [180/300] private validation Loss: 1.2039, Accuracy: 55.2188
+Epoch [180/300] public validation Loss: 1.2629, Accuracy: 53.3372
+----------------------------------------------------------------------
+Epoch [181/300] Training Loss: 0.8360, Accuracy: 68.4686
+Epoch [181/300] private validation Loss: 1.0861, Accuracy: 60.9665
+Epoch [181/300] public validation Loss: 1.1293, Accuracy: 59.3240
+----------------------------------------------------------------------
+Epoch [182/300] Training Loss: 0.8323, Accuracy: 68.2850
+Epoch [182/300] private validation Loss: 1.1064, Accuracy: 60.0515
+Epoch [182/300] public validation Loss: 1.1401, Accuracy: 58.4360
+----------------------------------------------------------------------
+Epoch [183/300] Training Loss: 0.8292, Accuracy: 68.4974
+Epoch [183/300] private validation Loss: 1.1125, Accuracy: 60.9094
+Epoch [183/300] public validation Loss: 1.1383, Accuracy: 59.9255
+----------------------------------------------------------------------
+Epoch [184/300] Training Loss: 0.8349, Accuracy: 68.5658
+Epoch [184/300] private validation Loss: 1.1309, Accuracy: 60.5090
+Epoch [184/300] public validation Loss: 1.1782, Accuracy: 59.4672
+----------------------------------------------------------------------
+Epoch [185/300] Training Loss: 0.8427, Accuracy: 68.2347
+Epoch [185/300] private validation Loss: 1.2125, Accuracy: 59.1650
+Epoch [185/300] public validation Loss: 1.2499, Accuracy: 57.0897
+----------------------------------------------------------------------
+Epoch [186/300] Training Loss: 0.8361, Accuracy: 68.3534
+Epoch [186/300] private validation Loss: 1.2909, Accuracy: 55.5047
+Epoch [186/300] public validation Loss: 1.3520, Accuracy: 53.5950
+----------------------------------------------------------------------
+Epoch [187/300] Training Loss: 0.8312, Accuracy: 69.0085
+Epoch [187/300] private validation Loss: 1.1779, Accuracy: 59.5939
+Epoch [187/300] public validation Loss: 1.2331, Accuracy: 58.0349
+----------------------------------------------------------------------
+Epoch [188/300] Training Loss: 0.8399, Accuracy: 68.2886
+Epoch [188/300] private validation Loss: 1.1842, Accuracy: 58.5073
+Epoch [188/300] public validation Loss: 1.2094, Accuracy: 57.4334
+----------------------------------------------------------------------
+Epoch [189/300] Training Loss: 0.8365, Accuracy: 68.4434
+Epoch [189/300] private validation Loss: 1.1127, Accuracy: 61.0809
+Epoch [189/300] public validation Loss: 1.1525, Accuracy: 59.8396
+----------------------------------------------------------------------
+Epoch [190/300] Training Loss: 0.8375, Accuracy: 68.4974
+Epoch [190/300] private validation Loss: 1.0834, Accuracy: 61.3097
+Epoch [190/300] public validation Loss: 1.1337, Accuracy: 61.2718
+----------------------------------------------------------------------
+Epoch [191/300] Training Loss: 0.8196, Accuracy: 69.1092
+Epoch [191/300] private validation Loss: 1.0772, Accuracy: 60.1945
+Epoch [191/300] public validation Loss: 1.1413, Accuracy: 59.4386
+----------------------------------------------------------------------
+Epoch [192/300] Training Loss: 0.8233, Accuracy: 69.3468
+Epoch [192/300] private validation Loss: 1.2243, Accuracy: 58.2785
+Epoch [192/300] public validation Loss: 1.2734, Accuracy: 56.7746
+----------------------------------------------------------------------
+Epoch [193/300] Training Loss: 0.8282, Accuracy: 68.7025
+Epoch [193/300] private validation Loss: 1.2531, Accuracy: 58.7361
+Epoch [193/300] public validation Loss: 1.3097, Accuracy: 56.3162
+----------------------------------------------------------------------
+Epoch [194/300] Training Loss: 0.8194, Accuracy: 69.3612
+Epoch [194/300] private validation Loss: 1.2190, Accuracy: 57.9354
+Epoch [194/300] public validation Loss: 1.2995, Accuracy: 55.8293
+----------------------------------------------------------------------
+Epoch [195/300] Training Loss: 0.8165, Accuracy: 69.3360
+Epoch [195/300] private validation Loss: 1.1786, Accuracy: 59.8799
+Epoch [195/300] public validation Loss: 1.2272, Accuracy: 57.4334
+----------------------------------------------------------------------
+Epoch [196/300] Training Loss: 0.8186, Accuracy: 69.2136
+Epoch [196/300] private validation Loss: 1.0663, Accuracy: 61.5671
+saving new model
+Epoch [196/300] public validation Loss: 1.0714, Accuracy: 60.1547
+----------------------------------------------------------------------
+Epoch [197/300] Training Loss: 0.8129, Accuracy: 69.5735
+Epoch [197/300] private validation Loss: 1.2852, Accuracy: 57.9640
+Epoch [197/300] public validation Loss: 1.3423, Accuracy: 53.8528
+----------------------------------------------------------------------
+Epoch [198/300] Training Loss: 0.8204, Accuracy: 69.4763
+Epoch [198/300] private validation Loss: 1.1103, Accuracy: 60.3088
+Epoch [198/300] public validation Loss: 1.1500, Accuracy: 58.8084
+----------------------------------------------------------------------
+Epoch [199/300] Training Loss: 0.8189, Accuracy: 68.9941
+Epoch [199/300] private validation Loss: 1.1628, Accuracy: 60.0229
+Epoch [199/300] public validation Loss: 1.2185, Accuracy: 56.3449
+----------------------------------------------------------------------
+Epoch [200/300] Training Loss: 0.8210, Accuracy: 69.1380
+Epoch [200/300] private validation Loss: 1.1145, Accuracy: 59.9085
+Epoch [200/300] public validation Loss: 1.1762, Accuracy: 57.3475
+----------------------------------------------------------------------
+Epoch [201/300] Training Loss: 0.8183, Accuracy: 69.2028
+Epoch [201/300] private validation Loss: 1.1931, Accuracy: 59.3652
+Epoch [201/300] public validation Loss: 1.2213, Accuracy: 56.9178
+----------------------------------------------------------------------
+Epoch [202/300] Training Loss: 0.8222, Accuracy: 69.0588
+Epoch [202/300] private validation Loss: 1.1810, Accuracy: 60.1087
+Epoch [202/300] public validation Loss: 1.2690, Accuracy: 56.2876
+----------------------------------------------------------------------
+Epoch [203/300] Training Loss: 0.8220, Accuracy: 69.0552
+Epoch [203/300] private validation Loss: 1.1093, Accuracy: 61.8816
+Epoch [203/300] public validation Loss: 1.1410, Accuracy: 59.2094
+----------------------------------------------------------------------
+Epoch [204/300] Training Loss: 0.8180, Accuracy: 69.1740
+Epoch [204/300] private validation Loss: 1.1049, Accuracy: 61.3955
+Epoch [204/300] public validation Loss: 1.1403, Accuracy: 59.6391
+----------------------------------------------------------------------
+Epoch [205/300] Training Loss: 0.8195, Accuracy: 69.0948
+Epoch [205/300] private validation Loss: 1.1200, Accuracy: 60.7950
+Epoch [205/300] public validation Loss: 1.2178, Accuracy: 58.8943
+----------------------------------------------------------------------
+Epoch [206/300] Training Loss: 0.8133, Accuracy: 69.4583
+Epoch [206/300] private validation Loss: 1.2490, Accuracy: 56.7915
+Epoch [206/300] public validation Loss: 1.3044, Accuracy: 54.5975
+----------------------------------------------------------------------
+Epoch [207/300] Training Loss: 0.8044, Accuracy: 69.6959
+Epoch [207/300] private validation Loss: 1.1091, Accuracy: 60.7664
+Epoch [207/300] public validation Loss: 1.1642, Accuracy: 58.6365
+----------------------------------------------------------------------
+Epoch [208/300] Training Loss: 0.8036, Accuracy: 69.8290
+Epoch [208/300] private validation Loss: 1.2317, Accuracy: 57.1061
+Epoch [208/300] public validation Loss: 1.2965, Accuracy: 55.4855
+----------------------------------------------------------------------
+Epoch [209/300] Training Loss: 0.8007, Accuracy: 69.8650
+Epoch [209/300] private validation Loss: 1.3709, Accuracy: 53.6174
+Epoch [209/300] public validation Loss: 1.4395, Accuracy: 52.7929
+----------------------------------------------------------------------
+Epoch [210/300] Training Loss: 0.8022, Accuracy: 69.8722
+Epoch [210/300] private validation Loss: 1.1901, Accuracy: 59.1650
+Epoch [210/300] public validation Loss: 1.2484, Accuracy: 57.2615
+----------------------------------------------------------------------
+Epoch [211/300] Training Loss: 0.8025, Accuracy: 69.3648
+Epoch [211/300] private validation Loss: 1.1206, Accuracy: 61.1667
+Epoch [211/300] public validation Loss: 1.1804, Accuracy: 59.0948
+----------------------------------------------------------------------
+Epoch [212/300] Training Loss: 0.8055, Accuracy: 69.6347
+Epoch [212/300] private validation Loss: 1.1318, Accuracy: 59.0792
+Epoch [212/300] public validation Loss: 1.1727, Accuracy: 57.1469
+----------------------------------------------------------------------
+Epoch [213/300] Training Loss: 0.8064, Accuracy: 69.7535
+Epoch [213/300] private validation Loss: 1.1719, Accuracy: 60.3660
+Epoch [213/300] public validation Loss: 1.2685, Accuracy: 56.3449
+----------------------------------------------------------------------
+Epoch [214/300] Training Loss: 0.8017, Accuracy: 69.9586
+Epoch [214/300] private validation Loss: 1.1943, Accuracy: 59.5367
+Epoch [214/300] public validation Loss: 1.2297, Accuracy: 55.8866
+----------------------------------------------------------------------
+Epoch [215/300] Training Loss: 0.8008, Accuracy: 69.9694
+Epoch [215/300] private validation Loss: 1.1016, Accuracy: 61.3097
+Epoch [215/300] public validation Loss: 1.1487, Accuracy: 60.4698
+----------------------------------------------------------------------
+Epoch [216/300] Training Loss: 0.8047, Accuracy: 69.8578
+Epoch [216/300] private validation Loss: 1.2493, Accuracy: 56.2196
+Epoch [216/300] public validation Loss: 1.3252, Accuracy: 54.8267
+----------------------------------------------------------------------
+Epoch [217/300] Training Loss: 0.8117, Accuracy: 69.3360
+Epoch [217/300] private validation Loss: 1.1396, Accuracy: 60.4232
+Epoch [217/300] public validation Loss: 1.2152, Accuracy: 58.4646
+----------------------------------------------------------------------
+Epoch [218/300] Training Loss: 0.8001, Accuracy: 69.9694
+Epoch [218/300] private validation Loss: 1.0765, Accuracy: 61.0809
+Epoch [218/300] public validation Loss: 1.0963, Accuracy: 60.8422
+----------------------------------------------------------------------
+Epoch [219/300] Training Loss: 0.8016, Accuracy: 69.9370
+Epoch [219/300] private validation Loss: 1.1358, Accuracy: 58.8504
+Epoch [219/300] public validation Loss: 1.1741, Accuracy: 58.0349
+----------------------------------------------------------------------
+Epoch [220/300] Training Loss: 0.8038, Accuracy: 69.5663
+Epoch [220/300] private validation Loss: 1.1019, Accuracy: 62.9397
+Epoch [220/300] public validation Loss: 1.1630, Accuracy: 59.5531
+----------------------------------------------------------------------
+Epoch [221/300] Training Loss: 0.7929, Accuracy: 70.2465
+Epoch [221/300] private validation Loss: 1.1368, Accuracy: 60.5662
+Epoch [221/300] public validation Loss: 1.1812, Accuracy: 58.4646
+----------------------------------------------------------------------
+Epoch [222/300] Training Loss: 0.7922, Accuracy: 70.2537
+Epoch [222/300] private validation Loss: 1.1569, Accuracy: 57.7066
+Epoch [222/300] public validation Loss: 1.2331, Accuracy: 56.9751
+----------------------------------------------------------------------
+Epoch [223/300] Training Loss: 0.7840, Accuracy: 70.4121
+Epoch [223/300] private validation Loss: 1.2359, Accuracy: 59.8513
+Epoch [223/300] public validation Loss: 1.2703, Accuracy: 57.4907
+----------------------------------------------------------------------
+Epoch [224/300] Training Loss: 0.7942, Accuracy: 70.2213
+Epoch [224/300] private validation Loss: 1.2010, Accuracy: 59.1936
+Epoch [224/300] public validation Loss: 1.2319, Accuracy: 57.0897
+----------------------------------------------------------------------
+Epoch [225/300] Training Loss: 0.7961, Accuracy: 69.8794
+Epoch [225/300] private validation Loss: 1.1220, Accuracy: 60.8236
+Epoch [225/300] public validation Loss: 1.1353, Accuracy: 59.8682
+----------------------------------------------------------------------
+Epoch [226/300] Training Loss: 0.7863, Accuracy: 70.3401
+Epoch [226/300] private validation Loss: 1.1542, Accuracy: 60.2230
+Epoch [226/300] public validation Loss: 1.2400, Accuracy: 57.4048
+----------------------------------------------------------------------
+Epoch [227/300] Training Loss: 0.7893, Accuracy: 70.1566
+Epoch [227/300] private validation Loss: 1.1780, Accuracy: 60.0801
+Epoch [227/300] public validation Loss: 1.2209, Accuracy: 58.5506
+----------------------------------------------------------------------
+Epoch [228/300] Training Loss: 0.7890, Accuracy: 70.3329
+Epoch [228/300] private validation Loss: 1.1386, Accuracy: 58.3357
+Epoch [228/300] public validation Loss: 1.2214, Accuracy: 57.0324
+----------------------------------------------------------------------
+Epoch [229/300] Training Loss: 0.7857, Accuracy: 70.3257
+Epoch [229/300] private validation Loss: 1.1779, Accuracy: 62.8825
+Epoch [229/300] public validation Loss: 1.2430, Accuracy: 59.2667
+----------------------------------------------------------------------
+Epoch [230/300] Training Loss: 0.7883, Accuracy: 70.2357
+Epoch [230/300] private validation Loss: 1.3313, Accuracy: 56.3626
+Epoch [230/300] public validation Loss: 1.3578, Accuracy: 54.8840
+----------------------------------------------------------------------
+Epoch [231/300] Training Loss: 0.7852, Accuracy: 70.3725
+Epoch [231/300] private validation Loss: 1.0717, Accuracy: 61.9674
+Epoch [231/300] public validation Loss: 1.0964, Accuracy: 59.8682
+----------------------------------------------------------------------
+Epoch [232/300] Training Loss: 0.7822, Accuracy: 70.6604
+Epoch [232/300] private validation Loss: 1.1354, Accuracy: 60.5662
+Epoch [232/300] public validation Loss: 1.1754, Accuracy: 59.3526
+----------------------------------------------------------------------
+Epoch [233/300] Training Loss: 0.7872, Accuracy: 70.4877
+Epoch [233/300] private validation Loss: 1.1084, Accuracy: 61.8816
+Epoch [233/300] public validation Loss: 1.1680, Accuracy: 59.5531
+----------------------------------------------------------------------
+Epoch [234/300] Training Loss: 0.7900, Accuracy: 70.3797
+Epoch [234/300] private validation Loss: 1.1362, Accuracy: 62.1962
+Epoch [234/300] public validation Loss: 1.2176, Accuracy: 58.7511
+----------------------------------------------------------------------
+Epoch [235/300] Training Loss: 0.7894, Accuracy: 70.2537
+Epoch [235/300] private validation Loss: 1.2851, Accuracy: 57.9640
+Epoch [235/300] public validation Loss: 1.3547, Accuracy: 55.5142
+----------------------------------------------------------------------
+Epoch [236/300] Training Loss: 0.7800, Accuracy: 70.7936
+Epoch [236/300] private validation Loss: 1.2375, Accuracy: 57.7924
+Epoch [236/300] public validation Loss: 1.2550, Accuracy: 57.0897
+----------------------------------------------------------------------
+Epoch [237/300] Training Loss: 0.7697, Accuracy: 70.9592
+Epoch [237/300] private validation Loss: 1.1449, Accuracy: 61.5671
+Epoch [237/300] public validation Loss: 1.2165, Accuracy: 58.4933
+----------------------------------------------------------------------
+Epoch [238/300] Training Loss: 0.7719, Accuracy: 70.6424
+Epoch [238/300] private validation Loss: 1.1410, Accuracy: 60.8522
+Epoch [238/300] public validation Loss: 1.1827, Accuracy: 60.2693
+----------------------------------------------------------------------
+Epoch [239/300] Training Loss: 0.7709, Accuracy: 71.0851
+Epoch [239/300] private validation Loss: 1.2308, Accuracy: 59.1364
+Epoch [239/300] public validation Loss: 1.2592, Accuracy: 57.9490
+----------------------------------------------------------------------
+Epoch [240/300] Training Loss: 0.7720, Accuracy: 71.2435
+Epoch [240/300] private validation Loss: 1.1989, Accuracy: 58.9934
+Epoch [240/300] public validation Loss: 1.2009, Accuracy: 59.7537
+----------------------------------------------------------------------
+Epoch [241/300] Training Loss: 0.7751, Accuracy: 70.8548
+Epoch [241/300] private validation Loss: 1.1373, Accuracy: 60.3374
+Epoch [241/300] public validation Loss: 1.2010, Accuracy: 58.8084
+----------------------------------------------------------------------
+Epoch [242/300] Training Loss: 0.7761, Accuracy: 70.9412
+Epoch [242/300] private validation Loss: 1.1846, Accuracy: 58.8790
+Epoch [242/300] public validation Loss: 1.2596, Accuracy: 56.0011
+----------------------------------------------------------------------
+Epoch [243/300] Training Loss: 0.7755, Accuracy: 71.0419
+saving new model
+Epoch [243/300] private validation Loss: 1.0337, Accuracy: 62.8825
+Epoch [243/300] public validation Loss: 1.0824, Accuracy: 61.5869
+----------------------------------------------------------------------
+Epoch [244/300] Training Loss: 0.7765, Accuracy: 70.9052
+Epoch [244/300] private validation Loss: 1.1120, Accuracy: 59.7369
+Epoch [244/300] public validation Loss: 1.1827, Accuracy: 58.5219
+----------------------------------------------------------------------
+Epoch [245/300] Training Loss: 0.7752, Accuracy: 70.8800
+Epoch [245/300] private validation Loss: 1.1174, Accuracy: 60.9379
+Epoch [245/300] public validation Loss: 1.2362, Accuracy: 58.1782
+----------------------------------------------------------------------
+Epoch [246/300] Training Loss: 0.7742, Accuracy: 70.8692
+Epoch [246/300] private validation Loss: 1.2082, Accuracy: 58.3357
+Epoch [246/300] public validation Loss: 1.2581, Accuracy: 56.2590
+----------------------------------------------------------------------
+Epoch [247/300] Training Loss: 0.7750, Accuracy: 70.9016
+Epoch [247/300] private validation Loss: 1.2558, Accuracy: 58.5073
+Epoch [247/300] public validation Loss: 1.3330, Accuracy: 57.2615
+----------------------------------------------------------------------
+Epoch [248/300] Training Loss: 0.7757, Accuracy: 70.8152
+Epoch [248/300] private validation Loss: 1.1037, Accuracy: 61.9102
+Epoch [248/300] public validation Loss: 1.1539, Accuracy: 58.5506
+----------------------------------------------------------------------
+Epoch [249/300] Training Loss: 0.7744, Accuracy: 71.0131
+Epoch [249/300] private validation Loss: 1.0888, Accuracy: 61.6242
+Epoch [249/300] public validation Loss: 1.1418, Accuracy: 59.6677
+----------------------------------------------------------------------
+Epoch [250/300] Training Loss: 0.7794, Accuracy: 71.0959
+Epoch [250/300] private validation Loss: 1.1148, Accuracy: 62.2534
+Epoch [250/300] public validation Loss: 1.1366, Accuracy: 60.6416
+----------------------------------------------------------------------
+Epoch [251/300] Training Loss: 0.7687, Accuracy: 71.3443
+Epoch [251/300] private validation Loss: 1.1422, Accuracy: 60.1945
+Epoch [251/300] public validation Loss: 1.2172, Accuracy: 57.3475
+----------------------------------------------------------------------
+Epoch [252/300] Training Loss: 0.7601, Accuracy: 71.5386
+Epoch [252/300] private validation Loss: 1.1777, Accuracy: 60.3374
+Epoch [252/300] public validation Loss: 1.2565, Accuracy: 56.3162
+----------------------------------------------------------------------
+Epoch [253/300] Training Loss: 0.7658, Accuracy: 71.3730
+Epoch [253/300] private validation Loss: 1.1117, Accuracy: 60.7378
+Epoch [253/300] public validation Loss: 1.1388, Accuracy: 60.3838
+----------------------------------------------------------------------
+Epoch [254/300] Training Loss: 0.7646, Accuracy: 71.2615
+Epoch [254/300] private validation Loss: 1.2408, Accuracy: 56.1052
+Epoch [254/300] public validation Loss: 1.2900, Accuracy: 54.7694
+----------------------------------------------------------------------
+Epoch [255/300] Training Loss: 0.7644, Accuracy: 71.1895
+Epoch [255/300] private validation Loss: 1.1210, Accuracy: 62.7681
+Epoch [255/300] public validation Loss: 1.1896, Accuracy: 58.9802
+----------------------------------------------------------------------
+Epoch [256/300] Training Loss: 0.7561, Accuracy: 71.4306
+Epoch [256/300] private validation Loss: 1.0994, Accuracy: 62.1104
+Epoch [256/300] public validation Loss: 1.1992, Accuracy: 59.4386
+----------------------------------------------------------------------
+Epoch [257/300] Training Loss: 0.7603, Accuracy: 71.5134
+Epoch [257/300] private validation Loss: 1.0965, Accuracy: 61.8244
+Epoch [257/300] public validation Loss: 1.1671, Accuracy: 59.3526
+----------------------------------------------------------------------
+Epoch [258/300] Training Loss: 0.7634, Accuracy: 71.3622
+Epoch [258/300] private validation Loss: 1.1185, Accuracy: 61.3669
+Epoch [258/300] public validation Loss: 1.1634, Accuracy: 59.9828
+----------------------------------------------------------------------
+Epoch [259/300] Training Loss: 0.7668, Accuracy: 71.4810
+Epoch [259/300] private validation Loss: 1.1297, Accuracy: 61.9102
+Epoch [259/300] public validation Loss: 1.1854, Accuracy: 59.8109
+----------------------------------------------------------------------
+Epoch [260/300] Training Loss: 0.7588, Accuracy: 71.4162
+Epoch [260/300] private validation Loss: 1.0919, Accuracy: 62.4821
+Epoch [260/300] public validation Loss: 1.1615, Accuracy: 59.6391
+----------------------------------------------------------------------
+Epoch [261/300] Training Loss: 0.7684, Accuracy: 71.0923
+Epoch [261/300] private validation Loss: 1.1673, Accuracy: 60.5376
+Epoch [261/300] public validation Loss: 1.2323, Accuracy: 58.9229
+----------------------------------------------------------------------
+Epoch [262/300] Training Loss: 0.7608, Accuracy: 71.3730
+Epoch [262/300] private validation Loss: 1.2196, Accuracy: 58.1641
+Epoch [262/300] public validation Loss: 1.2278, Accuracy: 56.2590
+----------------------------------------------------------------------
+Epoch [263/300] Training Loss: 0.7693, Accuracy: 71.5242
+Epoch [263/300] private validation Loss: 1.1477, Accuracy: 60.8522
+Epoch [263/300] public validation Loss: 1.2410, Accuracy: 58.0636
+----------------------------------------------------------------------
+Epoch [264/300] Training Loss: 0.7638, Accuracy: 71.4846
+Epoch [264/300] private validation Loss: 1.0804, Accuracy: 62.9683
+Epoch [264/300] public validation Loss: 1.1343, Accuracy: 60.2406
+----------------------------------------------------------------------
+Epoch [265/300] Training Loss: 0.7632, Accuracy: 71.3910
+Epoch [265/300] private validation Loss: 1.1287, Accuracy: 60.5662
+Epoch [265/300] public validation Loss: 1.1941, Accuracy: 58.8084
+----------------------------------------------------------------------
+Epoch [266/300] Training Loss: 0.7553, Accuracy: 71.7473
+Epoch [266/300] private validation Loss: 1.0944, Accuracy: 63.1112
+Epoch [266/300] public validation Loss: 1.1721, Accuracy: 59.2094
+----------------------------------------------------------------------
+Epoch [267/300] Training Loss: 0.7510, Accuracy: 71.8481
+Epoch [267/300] private validation Loss: 1.1809, Accuracy: 61.6242
+Epoch [267/300] public validation Loss: 1.2391, Accuracy: 57.7771
+----------------------------------------------------------------------
+Epoch [268/300] Training Loss: 0.7486, Accuracy: 71.7797
+Epoch [268/300] private validation Loss: 1.1461, Accuracy: 60.7092
+Epoch [268/300] public validation Loss: 1.2325, Accuracy: 58.2355
+----------------------------------------------------------------------
+Epoch [269/300] Training Loss: 0.7556, Accuracy: 71.5746
+Epoch [269/300] private validation Loss: 1.1619, Accuracy: 60.0515
+Epoch [269/300] public validation Loss: 1.2481, Accuracy: 57.6626
+----------------------------------------------------------------------
+Epoch [270/300] Training Loss: 0.7521, Accuracy: 72.0245
+Epoch [270/300] private validation Loss: 1.2206, Accuracy: 60.9094
+Epoch [270/300] public validation Loss: 1.2970, Accuracy: 58.3787
+----------------------------------------------------------------------
+Epoch [271/300] Training Loss: 0.7557, Accuracy: 71.7078
+Epoch [271/300] private validation Loss: 1.2967, Accuracy: 56.6772
+Epoch [271/300] public validation Loss: 1.3614, Accuracy: 54.6835
+----------------------------------------------------------------------
+Epoch [272/300] Training Loss: 0.7533, Accuracy: 72.0821
+Epoch [272/300] private validation Loss: 1.0757, Accuracy: 63.4258
+Epoch [272/300] public validation Loss: 1.1392, Accuracy: 59.5818
+----------------------------------------------------------------------
+Epoch [273/300] Training Loss: 0.7588, Accuracy: 71.7545
+Epoch [273/300] private validation Loss: 1.1314, Accuracy: 60.3660
+Epoch [273/300] public validation Loss: 1.1881, Accuracy: 58.4646
+----------------------------------------------------------------------
+Epoch [274/300] Training Loss: 0.7513, Accuracy: 71.6538
+Epoch [274/300] private validation Loss: 1.1422, Accuracy: 60.5376
+Epoch [274/300] public validation Loss: 1.2244, Accuracy: 58.6938
+----------------------------------------------------------------------
+Epoch [275/300] Training Loss: 0.7510, Accuracy: 71.9777
+Epoch [275/300] private validation Loss: 1.1387, Accuracy: 60.9951
+Epoch [275/300] public validation Loss: 1.2008, Accuracy: 59.3240
+----------------------------------------------------------------------
+Epoch [276/300] Training Loss: 0.7500, Accuracy: 71.9561
+Epoch [276/300] private validation Loss: 1.1663, Accuracy: 58.2499
+Epoch [276/300] public validation Loss: 1.2637, Accuracy: 56.1157
+----------------------------------------------------------------------
+Epoch [277/300] Training Loss: 0.7469, Accuracy: 72.0713
+Epoch [277/300] private validation Loss: 1.2066, Accuracy: 58.3357
+Epoch [277/300] public validation Loss: 1.2994, Accuracy: 56.2303
+----------------------------------------------------------------------
+Epoch [278/300] Training Loss: 0.7459, Accuracy: 71.9129
+Epoch [278/300] private validation Loss: 1.1067, Accuracy: 61.6528
+Epoch [278/300] public validation Loss: 1.1504, Accuracy: 59.7250
+----------------------------------------------------------------------
+Epoch [279/300] Training Loss: 0.7522, Accuracy: 71.7869
+Epoch [279/300] private validation Loss: 1.1114, Accuracy: 62.4249
+Epoch [279/300] public validation Loss: 1.1764, Accuracy: 60.4698
+----------------------------------------------------------------------
+Epoch [280/300] Training Loss: 0.7526, Accuracy: 71.8805
+Epoch [280/300] private validation Loss: 1.0924, Accuracy: 61.6242
+Epoch [280/300] public validation Loss: 1.1523, Accuracy: 58.5792
+----------------------------------------------------------------------
+Epoch [281/300] Training Loss: 0.7420, Accuracy: 72.0065
+Epoch [281/300] private validation Loss: 1.2408, Accuracy: 61.4527
+Epoch [281/300] public validation Loss: 1.3014, Accuracy: 57.8917
+----------------------------------------------------------------------
+Epoch [282/300] Training Loss: 0.7454, Accuracy: 72.2044
+Epoch [282/300] private validation Loss: 1.1746, Accuracy: 60.3946
+Epoch [282/300] public validation Loss: 1.2483, Accuracy: 58.1209
+----------------------------------------------------------------------
+Epoch [283/300] Training Loss: 0.7419, Accuracy: 72.2908
+Epoch [283/300] private validation Loss: 1.1820, Accuracy: 62.1104
+Epoch [283/300] public validation Loss: 1.2524, Accuracy: 59.0662
+----------------------------------------------------------------------
+Epoch [284/300] Training Loss: 0.7401, Accuracy: 72.5499
+Epoch [284/300] private validation Loss: 1.2243, Accuracy: 60.8808
+Epoch [284/300] public validation Loss: 1.3002, Accuracy: 56.8891
+----------------------------------------------------------------------
+Epoch [285/300] Training Loss: 0.7365, Accuracy: 72.3736
+Epoch [285/300] private validation Loss: 1.1123, Accuracy: 61.1667
+Epoch [285/300] public validation Loss: 1.2103, Accuracy: 58.9802
+----------------------------------------------------------------------
+Epoch [286/300] Training Loss: 0.7398, Accuracy: 72.1360
+Epoch [286/300] private validation Loss: 1.1372, Accuracy: 59.9371
+Epoch [286/300] public validation Loss: 1.1920, Accuracy: 57.5766
+----------------------------------------------------------------------
+Epoch [287/300] Training Loss: 0.7423, Accuracy: 72.1720
+Epoch [287/300] private validation Loss: 1.2287, Accuracy: 59.0792
+Epoch [287/300] public validation Loss: 1.2976, Accuracy: 58.4646
+----------------------------------------------------------------------
+Epoch [288/300] Training Loss: 0.7411, Accuracy: 72.2836
+Epoch [288/300] private validation Loss: 1.1666, Accuracy: 60.7378
+Epoch [288/300] public validation Loss: 1.2851, Accuracy: 57.9490
+----------------------------------------------------------------------
+Epoch [289/300] Training Loss: 0.7421, Accuracy: 72.2620
+Epoch [289/300] private validation Loss: 1.1282, Accuracy: 61.4813
+Epoch [289/300] public validation Loss: 1.1812, Accuracy: 60.8135
+----------------------------------------------------------------------
+Epoch [290/300] Training Loss: 0.7433, Accuracy: 72.1504
+Epoch [290/300] private validation Loss: 1.1149, Accuracy: 62.1390
+Epoch [290/300] public validation Loss: 1.2116, Accuracy: 59.7250
+----------------------------------------------------------------------
+Epoch [291/300] Training Loss: 0.7345, Accuracy: 72.3808
+Epoch [291/300] private validation Loss: 1.2082, Accuracy: 58.5073
+Epoch [291/300] public validation Loss: 1.2549, Accuracy: 56.6600
+----------------------------------------------------------------------
+Epoch [292/300] Training Loss: 0.7412, Accuracy: 72.2944
+Epoch [292/300] private validation Loss: 1.0906, Accuracy: 62.2820
+Epoch [292/300] public validation Loss: 1.1540, Accuracy: 59.8109
+----------------------------------------------------------------------
+Epoch [293/300] Training Loss: 0.7433, Accuracy: 72.3520
+Epoch [293/300] private validation Loss: 1.1559, Accuracy: 60.3374
+Epoch [293/300] public validation Loss: 1.2048, Accuracy: 58.1209
+----------------------------------------------------------------------
+Epoch [294/300] Training Loss: 0.7393, Accuracy: 72.4852
+Epoch [294/300] private validation Loss: 1.2594, Accuracy: 59.3366
+Epoch [294/300] public validation Loss: 1.3269, Accuracy: 57.9204
+----------------------------------------------------------------------
+Epoch [295/300] Training Loss: 0.7392, Accuracy: 72.3844
+Epoch [295/300] private validation Loss: 1.2087, Accuracy: 59.7941
+Epoch [295/300] public validation Loss: 1.2903, Accuracy: 57.7485
+----------------------------------------------------------------------
+Epoch [296/300] Training Loss: 0.7310, Accuracy: 72.4852
+Epoch [296/300] private validation Loss: 1.1125, Accuracy: 60.7378
+Epoch [296/300] public validation Loss: 1.1494, Accuracy: 60.4125
+----------------------------------------------------------------------
+Epoch [297/300] Training Loss: 0.7324, Accuracy: 72.6147
+Epoch [297/300] private validation Loss: 1.1230, Accuracy: 62.5107
+Epoch [297/300] public validation Loss: 1.1773, Accuracy: 60.7849
+----------------------------------------------------------------------
+Epoch [298/300] Training Loss: 0.7307, Accuracy: 72.5679
+Epoch [298/300] private validation Loss: 1.1523, Accuracy: 61.5957
+Epoch [298/300] public validation Loss: 1.2338, Accuracy: 59.2094
+----------------------------------------------------------------------
+Epoch [299/300] Training Loss: 0.7293, Accuracy: 72.9278
+Epoch [299/300] private validation Loss: 1.1971, Accuracy: 59.8227
+Epoch [299/300] public validation Loss: 1.2885, Accuracy: 58.2068
+----------------------------------------------------------------------
+Epoch [300/300] Training Loss: 0.7290, Accuracy: 72.5895
+Epoch [300/300] private validation Loss: 1.0909, Accuracy: 63.3400
+Epoch [300/300] public validation Loss: 1.1340, Accuracy: 60.7276
+
+Avergae Data Loading Time per Epoch:  0.2653272933972888
+Avergae Training Time per Epoch:  2.1266720458095367
+Avergae Validation Time per Epoch:  0.18139260106027602
+Avergae Time per Epoch:  4.696176656403392
+(base) qg2205@instance-5:~/HPML-project/src$ nano train.py
+(base) qg2205@instance-5:~/HPML-project/src$ 
