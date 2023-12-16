@@ -10,10 +10,8 @@ The overarching goal of this project is to enhance an existing Lightweight facia
 ./src: all source code for training and optimizing\
 ---PlotNumWorkers.py\
 ---model.py: define network structure\
----trainNumWorkers.py\
----trainHPtuning.py\
----trainOptimalParam.py\
----trainOriginal.py\
+---train.py: final optimized model\
+---trainHPtuning.py: code used for hyperparameter tuning\
 ./outputs: raw output saved in numpy array or text files\
 ./plots: images of result plots\
 ./trained: save trained model checkpoints\
@@ -28,40 +26,30 @@ The overarching goal of this project is to enhance an existing Lightweight facia
      
 3. Install Software:
    * PyTorch
+   * Wandb
 ```
 pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url 	https://download.pytorch.org/whl/cu116
-```
-  * Wandb
-```
 pip install wandb
 ```
 
 4. Retrain
-   * Data Loading Optimization: number of workers in DataLoader as command line parameter
+   * Command line parameter: number of workers in DataLoader as command line parameter (default: 1)
 ```
 cd src
-python trainNumWorkers.py -n 2
-```
-   * Hyperparameter Tuning
-```
-cd src
-python trainHPtuning.py
-```
-   * Train model with the optimal set of Hyperparmeters
-```
-cd src
-python trainOptimalParam.py
+python train.py -n 8
 ```
 
 ## Results
-1. Dataloading optimization:
+1. Data Augmentation: 
+2. Dataloading optimization:
    <img src="./plots/NumWorkersvsTime.png">
    
 3. Hyperparameter Tuning:
    <img src="./plots/HPaccuracy.png">
    Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
 
-
+4. Quantization:
+   
 ## Reference
 
 * Base Model: https://github.com/yoshidan/pytorch-facial-expression-recognition
