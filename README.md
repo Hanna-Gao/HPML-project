@@ -12,6 +12,8 @@ The overarching goal of this project is to enhance an existing Lightweight facia
 ---model.py: define network structure\
 ---train.py: final optimized model\
 ---trainHPtuning.py: code used for hyperparameter tuning\
+---eda_project.ipynb: notebook used to do EDA and generate balanced dataset\
+---train_
 ./outputs: raw output saved in numpy array or text file\
 ./plots: images of result plots\
 ./trained: save trained model checkpoints\
