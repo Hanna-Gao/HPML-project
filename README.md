@@ -1,34 +1,66 @@
-# pytorch-facial-expression-recognition
+# 6998 HPML Final Project
 
-Lightweight facial emotion recognition.
+## Description
 
-* Pytorch implementation for [Mini Xception](https://arxiv.org/pdf/1710.07557.pdf) inspired by [Keras implementation](https://github.com/oarriaga/face_classification).
-* Model size is about `250KB`
+The overarching goal of this project is to enhance an existing Lightweight facial emotion recognition system on GitHub by optimizing its data processing, model performance, and deployment efficiency. We will retrain the model with the existing model and we aim to achieve higher recognition accuracy and better runtime performance by several optimization techniques. 
 
-## Trained Model
+## Outline of the code respository
 
-Trained by FER2013 dataset.
+./dataset: dataset in csv format used for training\
+./src: all source code for training and optimizing\
+---PlotNumWorkers.py\
+---model.py: define network structure\
+---train.py: final optimized model\
+---trainHPtuning.py: code used for hyperparameter tuning\
+---eda_project.ipynb: notebook used to do EDA and generate balanced dataset\
+---data_augmentation_train.py: code used data augmentation method\
+./outputs: raw output saved in numpy array or text file\
+./plots: images of result plots\
+./trained: save trained model checkpoints\
 
-* Private Data : 66%
-* Public Data : 64%
+## Execute
 
-Here is the result of sample image.  
-Emotion | Probability | Guided Backprop | Grad-Cam | Guided Grad-Cam
+1. Prepare the dataset: please see [here](./dataset/README.md)
 
-<img src="./test/guided_gradcam.jpg">
+2. Hardware Requirements:
+   * CPU: 8 vCPU, 4 cores, 30 GB memory
+   * GPU: 1 NVIDIA T4 GPU
+     
+3. Install Software:
+   * PyTorch
+   * Wandb
+```
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url 	https://download.pytorch.org/whl/cu116
+pip install wandb
+```
 
-## Retrain
-
-1. see [here](./dataset/README.md) to prepare dataset.
-
-2. execute train.py
+4. Retrain the model
+   * Command line parameter: number of workers in DataLoader as command line parameter (default: 1)
 ```
 cd src
-python train.py
-python check.py  #check.py supports cpu only
+python train.py -n 8
 ```
 
+## Results
+1. Data Augmentation:
+   * The balanced dataset caused overfitting, and the random transformations to the training data significantly increase the training time, thus not applied further.\
+2. Dataloading optimization:
+   * The dataloading time decreases consistently as the number of workers increases. We will use 8 number of workers for further optimizations, which is the maximum number of workers available as we are using 8 CPU.\
+   <img src="./plots/NumWorkersvsTime.png">
+   
+3. Hyperparameter Tuning:
+   * The optimal configuration is:
+   <img src="./plots/HPconfig.png">
+
+   * After retraining the model with optimal set of parameters, the accuracy of both training and validation set increases. \
+   <img src="./plots/HPaccuracy.png"> \
+\
+   Link to Weights and Biase Project: https://wandb.ai/6998/6998-proj2?workspace=user-qg2205 
+
+4. Quantization:
+   * From the table, quantization is not an effective optimization technique for this model. 
+   <img src="./plots/quanAccuracy.png">
+   
 ## Reference
 
-* [Grad-CAM](https://github.com/kazuto1011/grad-cam-pytorch)
-* [Data Augmentation / Optimizer](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)
+* Base Model: https://github.com/yoshidan/pytorch-facial-expression-recognition
